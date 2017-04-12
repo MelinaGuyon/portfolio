@@ -1,0 +1,105 @@
+.home {
+  width: 100%;
+  height: 100%;
+
+  &__container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &:before {
+      content: '';
+      background: url('http://localhost:3000/assets/bg-clip.png') center;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  &__slider {
+    margin: auto;
+    width: 55%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__nav {
+      position: absolute;
+      z-index: 4;
+      right: 103%;
+
+      .arrow-prev, .arrow-next {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-left: 4px solid #9E8888;
+        border-top: 4px solid #9E8888;
+      }
+
+      .arrow-prev {
+        left: 5px;
+        transform: rotate(-45deg);
+        margin-bottom: 25px;
+        cursor: pointer;
+      }
+
+      .arrow-next {
+        right: 5px;
+        transform: rotate(135deg);
+        margin-top: 25px;
+        cursor: pointer;
+      }
+    }
+
+    &__image {
+      align-self: flex-start;
+
+      .img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        display: none;
+      }
+    }
+
+    &__desc {
+      position: absolute;
+      bottom: 90px;
+      left: 100px;
+      text-align: right;
+      z-index: 4;
+      cursor: pointer;
+
+      .title {
+        position: relative;
+        left: 0;
+        font-family: 'Bodoni';
+        font-size: 60px;
+        font-style: italic;
+        color: #E79898;
+        padding: 0 0 10px 0;
+        margin: 0;
+        opacity: 0;
+        display: none;
+      }
+
+      .date {
+        position: relative;
+        left: 0;
+        font-size: 30px;
+        color: #9E8888;
+        padding: 10px 0 0 0;
+        margin: 0;
+        opacity: 0;
+        display: none;
+      }
+    }
+  }
+}

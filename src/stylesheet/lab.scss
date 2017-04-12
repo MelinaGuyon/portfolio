@@ -1,0 +1,49 @@
+#lab {
+  position: relative;
+  z-index: 4;
+}
+
+.lab{
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  background: white;
+
+  &__image__container {
+    width: 100%;
+    height: 75%;
+
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__desc {
+    height: 25%;
+    width: 100%;
+    padding-left: 9%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    p {
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .title {
+      font-family: 'Bodoni';
+      font-size: 80px;
+      color: #E79898;
+      padding-bottom: 20px;
+    }
+
+    .date, .techno {
+      font-size: 30px;
+      color: #9E8888;
+    }
+  }
+}

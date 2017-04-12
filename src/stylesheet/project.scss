@@ -1,0 +1,107 @@
+.project {
+  height: 100%;
+  position: absolute;
+  z-index: 4;
+}
+
+.project-container {
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+}
+
+.project__title {
+  align-self: center;
+  position: absolute;
+  bottom: 50%;
+  margin-left: 24%;
+  text-align: center;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: bottom left;
+
+  p {
+    margin: 0;
+  }
+
+  .title {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .type {
+    font-family: 'Bodoni';
+    font-size: 100px;
+    color: #9E8888;
+    opacity: 0.5;
+    margin-bottom: 50px;
+  }
+
+  .name {
+    font-family: 'Bodoni';
+    font-size: 190px;
+    color: #E79898;
+  }
+}
+
+.project__header {
+  display: flex;
+  align-items: center;
+  height: 98%;
+  width: 80%;
+  margin: 0 auto;
+
+  &__desc {
+    padding-left: 30%;
+    padding-right: 10%;
+    position: relative;
+
+    &__logo {
+      text-align: right;
+
+      img {
+        height: 170px;
+      }
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 35px;
+      color: #9E8888;
+
+      &.date {
+        position: relative;
+        left: -25px;
+      }
+    }
+  }
+}
+
+.project__images {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 250px;
+
+  .full-width {
+    width: 100%;
+    margin-bottom: 150px;
+  }
+
+  &__double, &__triple {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 150px;
+
+    .half-width {
+      width: 47%;
+      height: auto;
+    }
+
+    .third-width {
+      width: 31%;
+      height: auto;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+body, html, #home, #about, #project, #lab {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica;
+ }
+
+#about, #project, #lab {
+  display: none;
+  opacity: 0;
+}
