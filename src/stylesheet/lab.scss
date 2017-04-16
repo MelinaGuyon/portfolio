@@ -10,13 +10,13 @@
   opacity: 0;
   background: white;
 
-  &__image__container {
+  &__video__container {
     width: 100%;
     height: 75%;
+    overflow: hidden;
 
-    .img {
+    video {
       width: 100%;
-      height: 100%;
     }
   }
 

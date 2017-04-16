@@ -1,8 +1,12 @@
 <template>
   <div id="lab">
     <div v-for="lab in datas.labs" class="lab js-slider-lab">
-      <div class="lab__image__container">
-        <img class="img" :src="lab.src" alt="">
+      <div class="lab__video__container">
+        <video :src="lab.src" autoplay poster="" loop>
+          Votre navigateur ne permet pas de lire les vidéos.
+          Mais vous pouvez toujours aller voir l'xp sur
+          <a href="http://codepen.io/MelinaGuyon/pen/QpmwwO">code pen</a> !
+        </video>
       </div>
       <div class="lab__desc">
         <div class="desc">

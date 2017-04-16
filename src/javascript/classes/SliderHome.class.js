@@ -104,7 +104,7 @@ class SliderHome {
     } else {
       document.querySelector('.js-nav-project').classList.remove('is-active')
       document.querySelector('.js-nav-lab').classList.add('is-active')
-      STORAGE.currentLabIndex = Number(this.index - 3)
+      STORAGE.currentLabIndex = Number(this.index - 7)
     }
   }
 

@@ -5,7 +5,8 @@
       <div class="arrow-next js-home-slider-next"></div>
     </div>
     <div class="home__slider__image">
-      <img v-for="slide in datas.slider" :src="slide.src" :data-type="slide.type" class="img js-home-slider-img" alt="">
+      <img v-for="slide in datas.slider" v-if="slide.img" :src="slide.src" :data-type="slide.type" class="img js-home-slider-img" alt="">
+      <video v-for="slide in datas.slider" v-if="slide.video" :src="slide.src" :data-type="slide.type" class="img js-home-slider-img" autoplay poster="" loop></video>
     </div>
     <div class="home__slider__desc">
       <p v-for="slide in datas.slider" class="title js-home-slider-title js-project-pointer" :data-type="slide.type" :data-project-id="slide.projectId">- {{ slide.title }} -</p>

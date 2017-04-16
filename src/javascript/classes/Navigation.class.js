@@ -126,7 +126,7 @@ class Navigation {
     if (this.activeSectionName == '#homeProject') {
       STORAGE.vueBuilderClass.initHome(STORAGE.currentProjectIndex, 'project')
     } else if (this.activeSectionName == '#homeLab') {
-      STORAGE.vueBuilderClass.initHome((3 + STORAGE.currentLabIndex), 'lab')
+      STORAGE.vueBuilderClass.initHome((7 + STORAGE.currentLabIndex), 'lab')
     } else if (this.activeSectionName == '#about') {
       STORAGE.vueBuilderClass.initAbout()
     } else if (this.activeSectionName == '#project') {
