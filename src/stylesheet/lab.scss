@@ -37,19 +37,19 @@
         position: relative;
         top: 0;
         margin: 0;
-        padding: 10px 0;
+        padding: 5px 0;
         opacity: 1;
       }
 
       .title {
         font-family: 'Bodoni';
-        font-size: 80px;
+        font-size: 35px;
         color: #E79898;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
       }
 
       .date, .techno {
-        font-size: 30px;
+        font-size: 16px;
         color: #9E8888;
       }
     }
@@ -58,23 +58,23 @@
 
       .arrow-prev, .arrow-next {
         position: relative;
-        width: 20px;
-        height: 20px;
-        border-left: 4px solid #9E8888;
-        border-top: 4px solid #9E8888;
+        width: 12px;
+        height: 12px;
+        border-left: 2px solid #9E8888;
+        border-top: 2px solid #9E8888;
       }
 
       .arrow-prev {
         left: 5px;
         transform: rotate(-45deg);
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         cursor: pointer;
       }
 
       .arrow-next {
         right: 5px;
         transform: rotate(135deg);
-        margin-top: 25px;
+        margin-top: 10px;
         cursor: pointer;
       }
     }

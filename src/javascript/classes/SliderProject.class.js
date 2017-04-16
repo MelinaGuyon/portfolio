@@ -65,22 +65,22 @@ class SliderProject {
     })
     TweenLite.from(title, 0.4, {
       alpha: 0,
-      left: '20%',
+      bottom: '55%',
       delay: 1
     })
     TweenLite.from(date, 0.6, {
       alpha: 0,
-      y: 70,
+      y: 30,
       delay: 0.4
     })
     TweenLite.from(techno, 0.6, {
       alpha: 0,
-      y: 70,
+      y: 30,
       delay: 0.6
     })
     TweenLite.from(text, 0.6, {
       alpha: 0,
-      y: 70,
+      y: 30,
       delay: 0.8
     })
   }

@@ -25,21 +25,21 @@
   }
 
   .title {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .type {
     font-family: 'Bodoni';
-    font-size: 100px;
+    font-size: 50px;
     color: #9E8888;
     opacity: 0.5;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .name {
     font-family: 'Bodoni';
-    font-size: 190px;
+    font-size: 100px;
     color: #E79898;
   }
 }
@@ -60,7 +60,7 @@
       text-align: right;
 
       img {
-        height: 170px;
+        height: 100px;
       }
     }
 
@@ -69,13 +69,13 @@
       left: 0;
       text-align: justify;
       line-height: 1.5;
-      font-size: 35px;
+      font-size: 18px;
       color: #9E8888;
       opacity: 1;
 
       &.date {
         position: relative;
-        left: -25px;
+        left: -10px;
       }
     }
   }
@@ -85,27 +85,27 @@
     position: relative;
     left: 80%;
     top: 30%;
-    margin-top: 70px;
+    margin-top: 30px;
 
     .arrow-prev, .arrow-next {
       position: relative;
-      width: 20px;
-      height: 20px;
-      border-left: 4px solid #9E8888;
-      border-top: 4px solid #9E8888;
+      width: 12px;
+      height: 12px;
+      border-left: 2px solid #9E8888;
+      border-top: 2px solid #9E8888;
     }
 
     .arrow-prev {
       left: 5px;
       transform: rotate(-45deg);
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       cursor: pointer;
     }
 
     .arrow-next {
       right: 5px;
       transform: rotate(135deg);
-      margin-top: 25px;
+      margin-top: 10px;
       cursor: pointer;
     }
   }
@@ -114,18 +114,18 @@
 .project__images {
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 250px;
+  margin-bottom: 150px;
 
   .full-width {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
   }
 
   &__double, &__triple {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
 
     .half-width {
       width: 47%;

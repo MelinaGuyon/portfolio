@@ -36,23 +36,23 @@
 
       .arrow-prev, .arrow-next {
         position: relative;
-        width: 20px;
-        height: 20px;
-        border-left: 4px solid #9E8888;
-        border-top: 4px solid #9E8888;
+        width: 12px;
+        height: 12px;
+        border-left: 2px solid #9E8888;
+        border-top: 2px solid #9E8888;
       }
 
       .arrow-prev {
         left: 5px;
         transform: rotate(-45deg);
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         cursor: pointer;
       }
 
       .arrow-next {
         right: 5px;
         transform: rotate(135deg);
-        margin-top: 25px;
+        margin-top: 10px;
         cursor: pointer;
       }
     }
@@ -71,8 +71,8 @@
 
     &__desc {
       position: absolute;
-      bottom: 90px;
-      left: 100px;
+      bottom: 55px;
+      left: 40px;
       text-align: right;
       z-index: 4;
       cursor: pointer;
@@ -81,10 +81,10 @@
         position: relative;
         left: 0;
         font-family: 'Bodoni';
-        font-size: 60px;
+        font-size: 30px;
         font-style: italic;
         color: #E79898;
-        padding: 0 0 10px 0;
+        padding: 0 0 3px 0;
         margin: 0;
         opacity: 0;
         display: none;
@@ -93,9 +93,9 @@
       .date {
         position: relative;
         left: 0;
-        font-size: 30px;
+        font-size: 16px;
         color: #9E8888;
-        padding: 10px 0 0 0;
+        padding: 3px 0 0 0;
         margin: 0;
         opacity: 0;
         display: none;

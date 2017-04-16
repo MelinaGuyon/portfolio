@@ -20,7 +20,7 @@
 
     span {
       font-family: 'Bodoni';
-      font-size: 190px;
+      font-size: 80px;
       color: #E79898;
     }
   }
@@ -28,20 +28,20 @@
   &__desc {
     padding-right: 20%;
     position: relative;
-    top: 100px;
+    top: 50px;
 
     &__logo {
       text-align: right;
 
       img {
-        height: 170px;
+        height: 100px;
       }
     }
 
     &__about {
       text-align: justify;
       line-height: 1.5;
-      font-size: 40px;
+      font-size: 18px;
       color: #9E8888;
     }
   }
