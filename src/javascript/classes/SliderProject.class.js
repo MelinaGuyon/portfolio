@@ -52,11 +52,36 @@ class SliderProject {
   }
 
   doSliderProjectAparition() {
+    const title = this.activeProject.querySelector('.project__title')
+    const desc = this.activeProject.querySelector('.project__header__desc')
+    const date = desc.querySelector('.date')
+    const techno = desc.querySelector('.techno')
+    const text = desc.querySelector('.text')
     TweenLite.set(this.activeProject, {
       display: "block"
     })
     TweenLite.to(this.activeProject, 0.6, {
       autoAlpha: 1
+    })
+    TweenLite.from(title, 0.4, {
+      alpha: 0,
+      left: '20%',
+      delay: 1
+    })
+    TweenLite.from(date, 0.6, {
+      alpha: 0,
+      y: 70,
+      delay: 0.4
+    })
+    TweenLite.from(techno, 0.6, {
+      alpha: 0,
+      y: 70,
+      delay: 0.6
+    })
+    TweenLite.from(text, 0.6, {
+      alpha: 0,
+      y: 70,
+      delay: 0.8
     })
   }
 

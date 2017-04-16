@@ -15,7 +15,7 @@
   align-self: center;
   position: absolute;
   bottom: 50%;
-  margin-left: 24%;
+  left: 24%;
   text-align: center;
   transform: rotate(-90deg) translateX(-50%);
   transform-origin: bottom left;
@@ -65,10 +65,13 @@
     }
 
     p {
+      position: relative;
+      left: 0;
       text-align: justify;
       line-height: 1.5;
       font-size: 35px;
       color: #9E8888;
+      opacity: 1;
 
       &.date {
         position: relative;

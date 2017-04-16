@@ -52,11 +52,30 @@ class SliderLab {
   }
 
   doSliderLabAparition() {
+    const desc = this.activeLab.querySelector('.desc')
+    const title = desc.querySelector('.title')
+    const date = desc.querySelector('.date')
+    const techno = desc.querySelector('.techno')
     TweenLite.set(this.activeLab, {
       display: "block"
     })
     TweenLite.to(this.activeLab, 0.6, {
       autoAlpha: 1
+    })
+    TweenLite.from(title, 0.4, {
+      alpha: 0,
+      y: -20,
+      delay: 0.6
+    })
+    TweenLite.from(date, 0.4, {
+      alpha: 0,
+      y: 20,
+      delay: 0.9
+    })
+    TweenLite.from(techno, 0.4, {
+      alpha: 0,
+      y: 20,
+      delay: 1.1
     })
   }
 
