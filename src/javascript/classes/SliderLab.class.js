@@ -30,11 +30,10 @@ class SliderLab {
 
   setActive() {
     STORAGE.gridClass.animateGrid()
+    STORAGE.currentLabIndex = Number(this.index)
     this.doSliderLabDesaparition()
 
     this.activeLab = this.sliderLabs[this.index]
-
-    console.log(this.activeLab);
 
     let that = this
     setTimeout(function(){

@@ -100,9 +100,11 @@ class SliderHome {
     if (this.actualType == 'project') {
       document.querySelector('.js-nav-lab').classList.remove('is-active')
       document.querySelector('.js-nav-project').classList.add('is-active')
+      STORAGE.currentProjectIndex = Number(this.index)
     } else {
       document.querySelector('.js-nav-project').classList.remove('is-active')
       document.querySelector('.js-nav-lab').classList.add('is-active')
+      STORAGE.currentLabIndex = Number(this.index - 3)
     }
   }
 

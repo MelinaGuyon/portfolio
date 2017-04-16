@@ -25,7 +25,6 @@ class VueBuilder {
   init() {
     this.initGrid()
     this.initNav()
-    console.log(STORAGE)
     this.initHome(0, 'project')
   }
 

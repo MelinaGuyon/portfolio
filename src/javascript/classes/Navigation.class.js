@@ -124,9 +124,9 @@ class Navigation {
 
   callBuildView(projectId) {
     if (this.activeSectionName == '#homeProject') {
-      STORAGE.vueBuilderClass.initHome(0, 'project')
+      STORAGE.vueBuilderClass.initHome(STORAGE.currentProjectIndex, 'project')
     } else if (this.activeSectionName == '#homeLab') {
-      STORAGE.vueBuilderClass.initHome(3, 'lab')
+      STORAGE.vueBuilderClass.initHome((3 + STORAGE.currentLabIndex), 'lab')
     } else if (this.activeSectionName == '#about') {
       STORAGE.vueBuilderClass.initAbout()
     } else if (this.activeSectionName == '#project') {

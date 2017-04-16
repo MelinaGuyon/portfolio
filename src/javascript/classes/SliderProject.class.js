@@ -30,6 +30,7 @@ class SliderProject {
 
   setActive() {
     STORAGE.gridClass.animateGrid()
+    STORAGE.currentProjectIndex = Number(this.index)
     this.doSliderProjectDesaparition()
 
     this.activeProject = this.sliderProjects[this.index]

@@ -9,6 +9,8 @@ window.STORAGE = {}
 window.onload = function () {
   new VueBuilder()
   new Grid()
+  STORAGE.currentLabIndex = 0
+  STORAGE.currentProjectIndex = 0
   STORAGE.vueBuilderClass.init()
 
   new Navigation()
