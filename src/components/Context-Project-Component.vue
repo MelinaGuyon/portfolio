@@ -5,8 +5,10 @@
       <p>{{ project.techno }}</p>
       <br>
       <p v-html="project.desc">{{ project.desc }}</p>
-      <br>
-      <p>melina.guyon@gmail.com</p>
+      <div class="project__header__nav">
+        <div class="arrow-prev js-project-slider-prev"></div>
+        <div class="arrow-next js-project-slider-next"></div>
+      </div>
     </div>
   </div>
 </template>

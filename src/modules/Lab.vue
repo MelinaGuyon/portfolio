@@ -5,9 +5,15 @@
         <img class="img" :src="lab.src" alt="">
       </div>
       <div class="lab__desc">
-        <p class="title">{{ lab.title }}</p>
-        <p class="date">Date : {{ lab.date }}</p>
-        <p class="techno">Technologie : {{ lab.techno }}</p>
+        <div class="desc">
+          <p class="title">{{ lab.title }}</p>
+          <p class="date">Date : {{ lab.date }}</p>
+          <p class="techno">Technologie : {{ lab.techno }}</p>
+        </div>
+        <div class="lab__desc__nav">
+          <div class="arrow-prev js-lab-slider-prev"></div>
+          <div class="arrow-next js-lab-slider-next"></div>
+        </div>
       </div>
     </div>
   </div>

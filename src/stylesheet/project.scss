@@ -76,6 +76,36 @@
       }
     }
   }
+
+  &__nav {
+    display: inline-block;
+    position: relative;
+    left: 80%;
+    top: 30%;
+    margin-top: 70px;
+
+    .arrow-prev, .arrow-next {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-left: 4px solid #9E8888;
+      border-top: 4px solid #9E8888;
+    }
+
+    .arrow-prev {
+      left: 5px;
+      transform: rotate(-45deg);
+      margin-bottom: 25px;
+      cursor: pointer;
+    }
+
+    .arrow-next {
+      right: 5px;
+      transform: rotate(135deg);
+      margin-top: 25px;
+      cursor: pointer;
+    }
+  }
 }
 
 .project__images {

@@ -49,7 +49,6 @@ class Navigation {
 
   animateSection() {
     let that = this
-    console.log(this.activeSection)
     TweenMax.to(this.prevActiveSection, 0.6, {
       alpha: 0,
       onComplete: function() {
