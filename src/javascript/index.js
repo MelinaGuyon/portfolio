@@ -2,12 +2,14 @@ import Vue from 'vue'
 
 import Navigation from './classes/Navigation.class.js'
 import VueBuilder from './classes/VueBuilder.class.js'
+import Grid from './classes/Grid.class.js'
 
-let vues
+window.STORAGE = {}
 
 window.onload = function () {
-  vues = new VueBuilder()
-  vues.init()
+  new VueBuilder()
+  new Grid()
+  STORAGE.vueBuilderClass.init()
 
   new Navigation()
 }

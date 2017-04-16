@@ -1,6 +1,4 @@
 import { TweenLite } from 'gsap'
-import Grid from './Grid.class.js'
-import VueBuilder from './VueBuilder.class.js'
 
 class Navigation {
 
@@ -13,9 +11,6 @@ class Navigation {
     this.activeSectionName
 
     this.projectPointers
-
-    this.grid = new Grid()
-    this.vueBuilder = new VueBuilder()
 
     this.bind(true)
     this.init()
@@ -72,7 +67,7 @@ class Navigation {
 
   handleItemClick(e) {
     this.animateNav()
-    this.grid.animateGrid()
+    STORAGE.gridClass.animateGrid()
 
     this.prevActiveSection = this.activeSection
     this.activeSectionName = e.target.getAttribute('id')
@@ -86,7 +81,7 @@ class Navigation {
 
   handleProjectClick(el) {
     this.animateNav()
-    this.grid.animateGrid()
+    STORAGE.gridClass.animateGrid()
 
     this.prevActiveSection = this.activeSection
 
@@ -130,15 +125,15 @@ class Navigation {
 
   callBuildView(projectId) {
     if (this.activeSectionName == '#homeProject') {
-      this.vueBuilder.initHome(0, 'project')
+      STORAGE.vueBuilderClass.initHome(0, 'project')
     } else if (this.activeSectionName == '#homeLab') {
-      this.vueBuilder.initHome(3, 'lab')
+      STORAGE.vueBuilderClass.initHome(3, 'lab')
     } else if (this.activeSectionName == '#about') {
-      this.vueBuilder.initAbout()
+      STORAGE.vueBuilderClass.initAbout()
     } else if (this.activeSectionName == '#project') {
-      this.vueBuilder.initProject(projectId)
+      STORAGE.vueBuilderClass.initProject(projectId)
     } else if (this.activeSectionName == '#lab') {
-      this.vueBuilder.initLab(projectId)
+      STORAGE.vueBuilderClass.initLab(projectId)
     }
     this.bind()
   }

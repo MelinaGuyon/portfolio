@@ -1,6 +1,5 @@
 <template>
   <div id="project">
-    <grid-component></grid-component>
     <div v-for="project in datas.projects" class="project-container js-slider-project">
       <div class="project__title">
         <title-project-component :project="project"></title-project-component>
@@ -14,7 +13,6 @@
 </template>
 
 <script>
-import Grid from '../components/Grid-Component.vue'
 import TitleProject from '../components/Title-Project-Component.vue'
 import ContextProject from '../components/Context-Project-Component.vue'
 import ImagesProject from '../components/Images-Project-Component.vue'
@@ -28,7 +26,6 @@ export default {
     }
   },
   components: {
-    'grid-component': Grid,
     'title-project-component': TitleProject,
     'context-project-component': ContextProject,
     'images-project-component': ImagesProject

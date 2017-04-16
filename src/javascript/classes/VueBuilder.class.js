@@ -15,6 +15,7 @@ import SliderLab from './SliderLab.class.js'
 class VueBuilder {
 
   constructor() {
+    STORAGE.vueBuilderClass = this
     this.home
     this.about
     this.project
@@ -22,8 +23,9 @@ class VueBuilder {
   }
 
   init() {
-    this.initNav()
     this.initGrid()
+    this.initNav()
+    console.log(STORAGE)
     this.initHome(0, 'project')
   }
 

@@ -14,8 +14,6 @@
 </template>
 
 <script>
-import Grid from '../components/Grid-Component.vue'
-
 import labDatas from '../javascript/datas/Lab-Datas'
 export default {
 
@@ -23,9 +21,6 @@ export default {
     return {
       datas: labDatas
     }
-  },
-  components: {
-    'grid-component': Grid
   }
 }
 </script>

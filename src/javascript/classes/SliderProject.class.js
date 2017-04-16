@@ -1,5 +1,4 @@
 import { TweenLite } from 'gsap'
-import Grid from './Grid.class.js'
 
 class SliderProject {
 
@@ -8,8 +7,6 @@ class SliderProject {
     this.index = index || 0
 
     this.activeProject = this.sliderProjects[this.index]
-    console.log(this.activeProject)
-    this.grid = new Grid()
 
     this.bind()
   }
@@ -18,7 +15,7 @@ class SliderProject {
   }
 
   setActive() {
-    this.grid.animateGrid()
+    STORAGE.gridClass.animateGrid()
     this.doSliderProjectDesaparition()
 
     this.activeProject = this.sliderProjects[this.index]

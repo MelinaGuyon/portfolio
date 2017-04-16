@@ -1,5 +1,4 @@
 import { TweenLite } from 'gsap'
-import Grid from './Grid.class.js'
 
 class SliderHome {
 
@@ -18,8 +17,6 @@ class SliderHome {
     this.activeTitle = this.sliderTitles[this.index]
     this.activeDate = this.sliderDates[this.index]
 
-    this.grid = new Grid()
-
     this.bind()
   }
 
@@ -34,7 +31,7 @@ class SliderHome {
   }
 
   setActive() {
-    this.grid.animateGrid()
+    STORAGE.gridClass.animateGrid()
     this.doSliderHomeDesaparition()
 
     this.activeImage = this.sliderImages[this.index]
