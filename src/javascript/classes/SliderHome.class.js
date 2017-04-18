@@ -18,21 +18,33 @@ class SliderHome {
     this.activeTitle = this.sliderTitles[this.index]
     this.activeDate = this.sliderDates[this.index]
 
+    this.swipeValue
+
     this.bind()
   }
 
   bind() {
     let that = this
     this.prevButton.addEventListener('click', that.handleClick)
+    this.prevButton.addEventListener('touchstart', that.handleClick)
     this.nextButton.addEventListener('click', that.handleClick)
+    this.nextButton.addEventListener('touchstart', that.handleClick)
     window.addEventListener('keydown', that.handleClick)
     window.addEventListener('resize', that.handleResize)
+    window.addEventListener('touchstart', that.handleSwipeStart)
+    window.addEventListener('touchend', that.handleSwipeEnd)
   }
 
   unbind() {
     let that = this
+    this.prevButton.removeEventListener('click', that.handleClick)
+    this.prevButton.removeEventListener('touchstart', that.handleClick)
+    this.nextButton.removeEventListener('click', that.handleClick)
+    this.nextButton.removeEventListener('touchstart', that.handleClick)
     window.removeEventListener('keydown', that.handleClick)
     window.removeEventListener('resize', that.handleResize)
+    window.removeEventListener('touchstart', that.handleSwipeStart)
+    window.removeEventListener('touchend', that.handleSwipeEnd)
   }
 
   setActive() {
@@ -139,7 +151,20 @@ class SliderHome {
     setTimeout(function(){
       STORAGE.resizerClass.resizeHomeMedias(STORAGE.sliderHomeClass.activeMedia)
     }, 50)
+  }
 
+  handleSwipeStart(e) {
+    this.swipeValue = e.touches[0].clientX
+  }
+
+  handleSwipeEnd(e) {
+    let delta = e.changedTouches[0].clientX - this.swipeValue
+
+    if (delta > 0 && Math.abs(delta) > 100) {
+      STORAGE.sliderHomeClass.handlePrevClick()
+    } else if (delta < 0 && Math.abs(delta) > 100) {
+      STORAGE.sliderHomeClass.handleNextClick()
+    }
   }
 
 }

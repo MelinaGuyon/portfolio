@@ -12,6 +12,8 @@ class SliderLab {
 
     this.activeLab = this.sliderLabs[this.index]
 
+    this.swipeValue
+
     this.bind()
   }
 
@@ -24,11 +26,15 @@ class SliderLab {
       el.addEventListener('click', that.handleClick)
     })
     window.addEventListener('keydown', that.handleClick)
+    window.addEventListener('touchstart', that.handleSwipeStart)
+    window.addEventListener('touchend', that.handleSwipeEnd)
   }
 
   unbind() {
     let that = this
     window.removeEventListener('keydown', that.handleClick)
+    window.removeEventListener('touchstart', that.handleSwipeStart)
+    window.removeEventListener('touchend', that.handleSwipeEnd)
   }
 
   setActive() {
@@ -114,6 +120,20 @@ class SliderLab {
     } else if (this.classList.contains('js-lab-slider-prev')) {
       STORAGE.sliderLabClass.handlePrevClick()
     } else {
+      STORAGE.sliderLabClass.handleNextClick()
+    }
+  }
+
+  handleSwipeStart(e) {
+    this.swipeValue = e.touches[0].clientX
+  }
+
+  handleSwipeEnd(e) {
+    let delta = e.changedTouches[0].clientX - this.swipeValue
+
+    if (delta > 0 && Math.abs(delta) > 100) {
+      STORAGE.sliderLabClass.handlePrevClick()
+    } else if (delta < 0 && Math.abs(delta) > 100) {
       STORAGE.sliderLabClass.handleNextClick()
     }
   }

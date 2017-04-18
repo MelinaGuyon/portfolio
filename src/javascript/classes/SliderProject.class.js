@@ -12,6 +12,8 @@ class SliderProject {
 
     this.activeProject = this.sliderProjects[this.index]
 
+    this.swipeValue
+
     this.bind()
   }
 
@@ -24,11 +26,15 @@ class SliderProject {
       el.addEventListener('click', that.handleClick)
     })
     window.addEventListener('keydown', that.handleClick)
+    window.addEventListener('touchstart', that.handleSwipeStart)
+    window.addEventListener('touchend', that.handleSwipeEnd)
   }
 
   unbind() {
     let that = this
     window.removeEventListener('keydown', that.handleClick)
+    window.removeEventListener('touchstart', that.handleSwipeStart)
+    window.removeEventListener('touchend', that.handleSwipeEnd)
   }
 
   setActive() {
@@ -117,6 +123,20 @@ class SliderProject {
     } else if (this.classList.contains('js-project-slider-prev')) {
       STORAGE.sliderProjectClass.handlePrevClick()
     } else {
+      STORAGE.sliderProjectClass.handleNextClick()
+    }
+  }
+
+  handleSwipeStart(e) {
+    this.swipeValue = e.touches[0].clientX
+  }
+
+  handleSwipeEnd(e) {
+    let delta = e.changedTouches[0].clientX - this.swipeValue
+
+    if (delta > 0 && Math.abs(delta) > 100) {
+      STORAGE.sliderProjectClass.handlePrevClick()
+    } else if (delta < 0 && Math.abs(delta) > 100) {
       STORAGE.sliderProjectClass.handleNextClick()
     }
   }
