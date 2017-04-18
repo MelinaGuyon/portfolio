@@ -111,7 +111,7 @@ class SliderLab {
       STORAGE.sliderLabClass.handlePrevClick()
     } else if (e.keyCode && e.keyCode == 39) {
       STORAGE.sliderLabClass.handleNextClick()
-    } else if (this.classList.contains('js-project-slider-prev')) {
+    } else if (this.classList.contains('js-lab-slider-prev')) {
       STORAGE.sliderLabClass.handlePrevClick()
     } else {
       STORAGE.sliderLabClass.handleNextClick()

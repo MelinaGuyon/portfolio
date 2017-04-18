@@ -21,4 +21,8 @@
       transition: opacity 1s;
     }
   }
+
+  @media all and (max-width: 640px) {
+    display: none;
+  }
 }

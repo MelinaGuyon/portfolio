@@ -115,7 +115,7 @@ class SliderHome {
       STORAGE.sliderHomeClass.handlePrevClick()
     } else if (e.keyCode && e.keyCode == 39) {
       STORAGE.sliderHomeClass.handleNextClick()
-    } else if (this.classList.contains('js-project-slider-prev')) {
+    } else if (this.classList.contains('js-home-slider-prev')) {
       STORAGE.sliderHomeClass.handlePrevClick()
     } else {
       STORAGE.sliderHomeClass.handleNextClick()
