@@ -127,10 +127,6 @@ class VueBuilder {
     })
   }
 
-  resetVues() {
-    this.project.$destroy()
-    this.lab.$destroy()
-  }
 }
 
 export default VueBuilder

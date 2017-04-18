@@ -3,6 +3,7 @@ import { TweenLite } from 'gsap'
 class SliderProject {
 
   constructor(index) {
+    STORAGE.sliderProjectClass = this
     this.sliderProjects = document.querySelectorAll('.js-slider-project')
     this.index = index || 0
 
@@ -17,15 +18,17 @@ class SliderProject {
   bind() {
     let that = this
     this.prevButtons.forEach(function(el){
-      el.addEventListener('click', function(){
-        that.handlePrevClick(that)
-      })
+      el.addEventListener('click', that.handleClick)
     })
     this.nextButtons.forEach(function(el){
-      el.addEventListener('click', function(){
-        that.handleNextClick(that)
-      })
+      el.addEventListener('click', that.handleClick)
     })
+    window.addEventListener('keydown', that.handleClick)
+  }
+
+  unbind() {
+    let that = this
+    window.removeEventListener('keydown', that.handleClick)
   }
 
   setActive() {
@@ -85,13 +88,13 @@ class SliderProject {
     })
   }
 
-  handlePrevClick(that) {
-    if (that.index > 0) {
-      that.index--
+  handlePrevClick() {
+    if (this.index > 0) {
+      this.index--
     } else {
-      that.index = that.sliderProjects.length - 1
+      this.index = this.sliderProjects.length - 1
     }
-    that.setActive()
+    this.setActive()
   }
 
   handleNextClick() {
@@ -101,6 +104,21 @@ class SliderProject {
       this.index = 0
     }
     this.setActive()
+  }
+
+  handleClick(e) {
+    if (e.keyCode && ( e.keyCode != 37 && e.keyCode != 39 ) ) {
+      return
+    }
+    if (e.keyCode && e.keyCode == 37) {
+      STORAGE.sliderProjectClass.handlePrevClick()
+    } else if (e.keyCode && e.keyCode == 39) {
+      STORAGE.sliderProjectClass.handleNextClick()
+    } else if (this.classList.contains('js-project-slider-prev')) {
+      STORAGE.sliderProjectClass.handlePrevClick()
+    } else {
+      STORAGE.sliderProjectClass.handleNextClick()
+    }
   }
 }
 

@@ -123,6 +123,13 @@ class Navigation {
   }
 
   callBuildView(projectId) {
+    if (STORAGE.sliderHomeClass)
+      STORAGE.sliderHomeClass.unbind()
+    if (STORAGE.sliderProjectClass)
+      STORAGE.sliderProjectClass.unbind()
+    if (STORAGE.sliderLabClass)
+      STORAGE.sliderLabClass.unbind()
+
     if (this.activeSectionName == '#homeProject') {
       STORAGE.vueBuilderClass.initHome(STORAGE.currentProjectIndex, 'project')
     } else if (this.activeSectionName == '#homeLab') {

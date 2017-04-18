@@ -3,6 +3,7 @@ import { TweenLite } from 'gsap'
 class SliderHome {
 
   constructor(index, type) {
+    STORAGE.sliderHomeClass = this
     this.el = document.querySelector('.js-home-slider')
     this.sliderImages = this.el.querySelectorAll('.js-home-slider-media')
     this.sliderTitles = this.el.querySelectorAll('.js-home-slider-title')
@@ -22,15 +23,18 @@ class SliderHome {
 
   bind() {
     let that = this
-    this.prevButton.addEventListener('click', function(){
-      that.handlePrevClick()
-    })
-    this.nextButton.addEventListener('click', function(){
-      that.handleNextClick()
-    })
+    this.prevButton.addEventListener('click', that.handleClick)
+    this.nextButton.addEventListener('click', that.handleClick)
+    window.addEventListener('keydown', that.handleClick)
+  }
+
+  unbind() {
+    let that = this
+    window.removeEventListener('keydown', that.handleClick)
   }
 
   setActive() {
+    console.log('in home')
     STORAGE.gridClass.animateGrid()
     this.doSliderHomeDesaparition()
 
@@ -99,6 +103,21 @@ class SliderHome {
       this.index = 0
     }
     this.setActive()
+  }
+
+  handleClick(e) {
+    if (e.keyCode && ( e.keyCode != 37 && e.keyCode != 39 ) ) {
+      return
+    }
+    if (e.keyCode && e.keyCode == 37) {
+      STORAGE.sliderHomeClass.handlePrevClick()
+    } else if (e.keyCode && e.keyCode == 39) {
+      STORAGE.sliderHomeClass.handleNextClick()
+    } else if (this.classList.contains('js-project-slider-prev')) {
+      STORAGE.sliderHomeClass.handlePrevClick()
+    } else {
+      STORAGE.sliderHomeClass.handleNextClick()
+    }
   }
 
   handleTypeChange() {

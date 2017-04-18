@@ -6,7 +6,7 @@ const projectDatas = {
       date: 'En cours de réalisation à Gobelins',
       techno: 'Pixi.js',
       src : [
-        'assets/slider-sum.jpg'
+        'assets/projets/sum-1.jpg'
       ]
     },
     {
@@ -15,10 +15,10 @@ const projectDatas = {
       date: 'Mars 2017',
       techno: 'Vue.js',
       src : [
-        'assets/travel-1.png',
-        'assets/travel-2.png',
-        'assets/travel-3.png',
-        'assets/travel-4.png'
+        'assets/projets/travel-1.png',
+        'assets/projets/travel-2.png',
+        'assets/projets/travel-3.png',
+        'assets/projets/travel-4.png'
       ]
     },
     {
@@ -27,9 +27,9 @@ const projectDatas = {
       date: 'Décembre 2016',
       techno: 'D3.js',
       src : [
-        'assets/terre-promise-1.jpg',
-        'assets/terre-promise-2.png',
-        'assets/terre-promise-3.png'
+        'assets/projets/terre-promise-1.jpg',
+        'assets/projets/terre-promise-2.png',
+        'assets/projets/terre-promise-3.png'
       ]
     },
     {
@@ -38,12 +38,12 @@ const projectDatas = {
       date: 'Avril 2016',
       techno: 'Symfony 2',
       src : [
-        'assets/nosheetpaper-1.jpg',
-        'assets/nosheetpaper-2.jpg'
+        'assets/projets/nosheetpaper-1.jpg',
+        'assets/projets/nosheetpaper-2.jpg'
       ],
       srcDouble : [
-        'assets/nosheetpaper-3.jpg',
-        'assets/nosheetpaper-4.jpg'
+        'assets/projets/nosheetpaper-3.jpg',
+        'assets/projets/nosheetpaper-4.jpg'
       ],
       double : true
     },
@@ -53,17 +53,17 @@ const projectDatas = {
       date: 'Janvier 2016',
       techno: 'Ionic - Cordova - Angular.js',
       src : [
-        'assets/memos-1.jpg'
+        'assets/projets/memos-1.jpg'
       ],
       srcTripleOne: [
-        'assets/memos-2.jpg',
-        'assets/memos-3.jpg',
-        'assets/memos-4.jpg'
+        'assets/projets/memos-2.jpg',
+        'assets/projets/memos-3.jpg',
+        'assets/projets/memos-4.jpg'
       ],
       srcTripleTwo: [
-        'assets/memos-5.jpg',
-        'assets/memos-6.jpg',
-        'assets/memos-7.jpg'
+        'assets/projets/memos-5.jpg',
+        'assets/projets/memos-6.jpg',
+        'assets/projets/memos-7.jpg'
       ],
       sextuple : true
     },
@@ -73,9 +73,9 @@ const projectDatas = {
       date: 'Janvier 2016',
       techno: 'Three.js',
       src : [
-        'assets/change-1.jpg',
-        'assets/change-2.png',
-        'assets/change-3.png'
+        'assets/projets/change-1.jpg',
+        'assets/projets/change-2.png',
+        'assets/projets/change-3.png'
       ]
     },
     {
@@ -84,10 +84,10 @@ const projectDatas = {
       date: 'Juillet 2015',
       techno: 'Pixi.js',
       src : [
-        'assets/shootmore-1.png',
-        'assets/shootmore-2.png',
-        'assets/shootmore-3.png',
-        'assets/shootmore-4.png'
+        'assets/projets/shootmore-1.png',
+        'assets/projets/shootmore-2.png',
+        'assets/projets/shootmore-3.png',
+        'assets/projets/shootmore-4.png'
       ]
     }
   ]
