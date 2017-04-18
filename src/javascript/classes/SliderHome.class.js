@@ -5,7 +5,7 @@ class SliderHome {
   constructor(index, type) {
     STORAGE.sliderHomeClass = this
     this.el = document.querySelector('.js-home-slider')
-    this.sliderImages = this.el.querySelectorAll('.js-home-slider-media')
+    this.sliderMedias = this.el.querySelectorAll('.js-home-slider-media')
     this.sliderTitles = this.el.querySelectorAll('.js-home-slider-title')
     this.sliderDates = this.el.querySelectorAll('.js-home-slider-date')
 
@@ -14,7 +14,7 @@ class SliderHome {
     this.index = index || 0
     this.actualType = type
 
-    this.activeMedia = this.sliderImages[this.index]
+    this.activeMedia = this.sliderMedias[this.index]
     this.activeTitle = this.sliderTitles[this.index]
     this.activeDate = this.sliderDates[this.index]
 
@@ -26,22 +26,23 @@ class SliderHome {
     this.prevButton.addEventListener('click', that.handleClick)
     this.nextButton.addEventListener('click', that.handleClick)
     window.addEventListener('keydown', that.handleClick)
+    window.addEventListener('resize', that.handleResize)
   }
 
   unbind() {
     let that = this
     window.removeEventListener('keydown', that.handleClick)
+    window.removeEventListener('resize', that.handleResize)
   }
 
   setActive() {
-    console.log('in home')
     STORAGE.gridClass.animateGrid()
     this.doSliderHomeDesaparition()
 
     if (this.activeMedia.classList.contains('is-video'))
       this.activeMedia.pause()
 
-    this.activeMedia = this.sliderImages[this.index]
+    this.activeMedia = this.sliderMedias[this.index]
     this.activeTitle = this.sliderTitles[this.index]
     this.activeDate = this.sliderDates[this.index]
 
@@ -51,6 +52,7 @@ class SliderHome {
     let that = this
     setTimeout(function(){
       that.doSliderHomeAparition()
+      STORAGE.resizerClass.resizeHomeMedias(that.activeMedia)
     }, 400)
 
     this.handleTypeChange()
@@ -91,13 +93,13 @@ class SliderHome {
     if (this.index > 0) {
       this.index--
     } else {
-      this.index = this.sliderImages.length - 1
+      this.index = this.sliderMedias.length - 1
     }
     this.setActive()
   }
 
   handleNextClick() {
-    if (this.index < this.sliderImages.length - 1) {
+    if (this.index < this.sliderMedias.length - 1) {
       this.index++
     } else {
       this.index = 0
@@ -131,6 +133,13 @@ class SliderHome {
       document.querySelector('.js-nav-lab').classList.add('is-active')
       STORAGE.currentLabIndex = Number(this.index - 7)
     }
+  }
+
+  handleResize() {
+    setTimeout(function(){
+      STORAGE.resizerClass.resizeHomeMedias(STORAGE.sliderHomeClass.activeMedia)
+    }, 50)
+
   }
 
 }
