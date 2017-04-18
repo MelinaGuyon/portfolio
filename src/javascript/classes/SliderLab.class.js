@@ -33,7 +33,10 @@ class SliderLab {
     STORAGE.currentLabIndex = Number(this.index)
     this.doSliderLabDesaparition()
 
+    this.activeLab.querySelector('video').pause()
     this.activeLab = this.sliderLabs[this.index]
+    this.activeLab.querySelector('video').play()
+
 
     let that = this
     setTimeout(function(){

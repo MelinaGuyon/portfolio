@@ -65,7 +65,7 @@ const sliderHomeDatas = {
       video: true
     },
     {
-      src: 'assets/slider-fire.jpg',
+      src: 'assets/shape.mov',
       title: 'Shape Generation',
       date: 'Décembre 2016',
       projectId : 1,
@@ -73,7 +73,7 @@ const sliderHomeDatas = {
       video: true
     },
     {
-      src: 'assets/slider-fire.jpg',
+      src: 'assets/fire.mov',
       title: 'Audio Fire',
       date: 'Novembre 2016',
       projectId : 2,
@@ -81,7 +81,7 @@ const sliderHomeDatas = {
       video: true
     },
     {
-      src: 'assets/slider-fire.jpg',
+      src: 'assets/triangles.mov',
       title: 'Mouse Following',
       date: 'Octobre 2016',
       projectId : 3,

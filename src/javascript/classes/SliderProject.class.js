@@ -102,8 +102,6 @@ class SliderProject {
     }
     this.setActive()
   }
-
-
 }
 
 export default SliderProject

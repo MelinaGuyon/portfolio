@@ -4,7 +4,7 @@ class SliderHome {
 
   constructor(index, type) {
     this.el = document.querySelector('.js-home-slider')
-    this.sliderImages = this.el.querySelectorAll('.js-home-slider-img')
+    this.sliderImages = this.el.querySelectorAll('.js-home-slider-media')
     this.sliderTitles = this.el.querySelectorAll('.js-home-slider-title')
     this.sliderDates = this.el.querySelectorAll('.js-home-slider-date')
 
@@ -13,7 +13,7 @@ class SliderHome {
     this.index = index || 0
     this.actualType = type
 
-    this.activeImage = this.sliderImages[this.index]
+    this.activeMedia = this.sliderImages[this.index]
     this.activeTitle = this.sliderTitles[this.index]
     this.activeDate = this.sliderDates[this.index]
 
@@ -34,9 +34,15 @@ class SliderHome {
     STORAGE.gridClass.animateGrid()
     this.doSliderHomeDesaparition()
 
-    this.activeImage = this.sliderImages[this.index]
+    if (this.activeMedia.classList.contains('is-video'))
+      this.activeMedia.pause()
+
+    this.activeMedia = this.sliderImages[this.index]
     this.activeTitle = this.sliderTitles[this.index]
     this.activeDate = this.sliderDates[this.index]
+
+    if (this.activeMedia.classList.contains('is-video'))
+      this.activeMedia.play()
 
     let that = this
     setTimeout(function(){
@@ -47,20 +53,20 @@ class SliderHome {
   }
 
   doSliderHomeDesaparition() {
-    TweenLite.to([this.activeImage, this.activeTitle, this.activeDate], 0.3, {
+    TweenLite.to([this.activeMedia, this.activeTitle, this.activeDate], 0.3, {
       autoAlpha: 0
     })
-    TweenLite.set([this.activeImage, this.activeTitle, this.activeDate], {
+    TweenLite.set([this.activeMedia, this.activeTitle, this.activeDate], {
       display: "none",
       delay: 0.3
     })
   }
 
   doSliderHomeAparition() {
-    TweenLite.set([this.activeImage, this.activeTitle, this.activeDate], {
+    TweenLite.set([this.activeMedia, this.activeTitle, this.activeDate], {
       display: "block"
     })
-    TweenLite.to([this.activeImage], 0.6, {
+    TweenLite.to([this.activeMedia], 0.6, {
       autoAlpha: 1
     })
     TweenLite.to([this.activeTitle, this.activeDate], 0.9, {
@@ -96,7 +102,7 @@ class SliderHome {
   }
 
   handleTypeChange() {
-    this.actualType = this.activeImage.getAttribute('data-type')
+    this.actualType = this.activeMedia.getAttribute('data-type')
     if (this.actualType == 'project') {
       document.querySelector('.js-nav-lab').classList.remove('is-active')
       document.querySelector('.js-nav-project').classList.add('is-active')
