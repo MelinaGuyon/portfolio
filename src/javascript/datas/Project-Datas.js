@@ -3,7 +3,7 @@ const projectDatas = {
     {
       title: 'Sum',
       desc: 'Sum est le tout premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal crée dans le cadre de mon projet tuteuré de 2ème année.<br>Le journal relate les derniers évènements en date sur le campus. Il crée des liens et communique sur des sujets relatifs au thème de la vie étudiante.<br>Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
-      date: 'En cours de réalisation à Gobelins',
+      date: 'En cours de réalisation',
       techno: 'Pixi.js',
       src : [
         'assets/projets/sum-1.jpg'

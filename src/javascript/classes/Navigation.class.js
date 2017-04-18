@@ -6,6 +6,9 @@ class Navigation {
     this.el = document.querySelector('.js-nav')
     this.navigationItems = this.el.querySelectorAll('.js-nav-item')
 
+    this.navigationBurger = this.el.querySelector('.js-nav-burger')
+    this.navigationBurgerItems = this.el.querySelectorAll('.js-nav-burger-item')
+
     this.prevActiveSection
     this.activeSection = document.querySelector('#home')
     this.activeSectionName
@@ -32,6 +35,10 @@ class Navigation {
     })
 
     if (firstTime) {
+      this.navigationBurger.addEventListener('click', function(){
+        that.handleBurgerClick()
+      })
+
       this.navigationItems.forEach(function(el) {
         el.addEventListener('click', function(e) {
           that.handleItemClick(e)
@@ -41,10 +48,12 @@ class Navigation {
   }
 
   animateNav() {
-    TweenMax.from(this.navigationItems, 0.3, {
-      scaleY: 0,
-      delay:0.9
-    })
+    if (window.innerWidth > 640) {
+      TweenMax.from(this.navigationItems, 0.3, {
+        scaleY: 0,
+        delay:0.9
+      })
+    }
   }
 
   animateSection() {
@@ -76,6 +85,10 @@ class Navigation {
     this.activeSection = document.querySelector(e.target.getAttribute('data-target'))
 
     this.animateSection()
+
+    if (window.innerWidth < 640) {
+      this.handleBurgerClick()
+    }
   }
 
   handleProjectClick(el) {
@@ -102,6 +115,69 @@ class Navigation {
     }
 
     this.animateSection()
+  }
+
+  handleBurgerClick() {
+    if (this.navigationBurger.classList.contains('is-closed')) {
+      this.navigationBurger.classList.remove('is-closed')
+      TweenLite.to(this.el, 0.3, {
+        right : '-50%'
+      })
+      TweenLite.to(this.navigationBurger, 0.3, {
+        left : '-60px',
+        translateX: '0',
+        alpha: 1
+      })
+      TweenLite.to(this.navigationBurgerItems[1], 0.3, {
+        alpha : 1
+      })
+      TweenLite.to(this.navigationBurgerItems[0], 0.3, {
+         rotation: 0
+      })
+      TweenLite.to(this.navigationBurgerItems[2], 0.3, {
+        rotation: 0
+      })
+      TweenLite.to(this.navigationBurgerItems[0], 0.3, {
+        y : 0,
+        delay: 0.3
+      })
+      TweenLite.to(this.navigationBurgerItems[2], 0.3, {
+        y : 0,
+        delay: 0.3
+      })
+      TweenLite.to(this.navigationBurgerItems[1], 0.3, {
+        alpha : 1,
+        delay: 0.3
+      })
+    } else {
+      this.navigationBurger.classList.add('is-closed')
+      TweenLite.to(this.el, 0.3, {
+        right : 0
+      })
+      TweenLite.to(this.navigationBurger, 0.3, {
+        left : '50%',
+        translateX: '-50%',
+        alpha: 0.2
+      })
+      TweenLite.to(this.navigationBurgerItems[0], 0.3, {
+        y : 7
+      })
+      TweenLite.to(this.navigationBurgerItems[2], 0.3, {
+        y : -8
+      })
+      TweenLite.to(this.navigationBurgerItems[1], 0.3, {
+        alpha : 0,
+        delay: 0.3
+      })
+      TweenLite.to(this.navigationBurgerItems[0], 0.3, {
+         rotation: 45,
+         delay: 0.3
+      })
+      TweenLite.to(this.navigationBurgerItems[2], 0.3, {
+        rotation: -45,
+        delay: 0.3
+      })
+    }
   }
 
   handlePageChange() {

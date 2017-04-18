@@ -158,6 +158,10 @@
       padding-right: 5%;
       p {
         font-size: 14px;
+
+        &.techno {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -171,12 +175,12 @@
 
       .arrow-prev {
         left: 2px;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
       }
 
       .arrow-next {
         right: 2px;
-        margin-top: 5px;
+        margin-top: 7px;
       }
     }
   }

@@ -26,9 +26,7 @@ class SliderHome {
   bind() {
     let that = this
     this.prevButton.addEventListener('click', that.handleClick)
-    this.prevButton.addEventListener('touchstart', that.handleClick)
     this.nextButton.addEventListener('click', that.handleClick)
-    this.nextButton.addEventListener('touchstart', that.handleClick)
     window.addEventListener('keydown', that.handleClick)
     window.addEventListener('resize', that.handleResize)
     window.addEventListener('touchstart', that.handleSwipeStart)
@@ -38,9 +36,7 @@ class SliderHome {
   unbind() {
     let that = this
     this.prevButton.removeEventListener('click', that.handleClick)
-    this.prevButton.removeEventListener('touchstart', that.handleClick)
     this.nextButton.removeEventListener('click', that.handleClick)
-    this.nextButton.removeEventListener('touchstart', that.handleClick)
     window.removeEventListener('keydown', that.handleClick)
     window.removeEventListener('resize', that.handleResize)
     window.removeEventListener('touchstart', that.handleSwipeStart)
