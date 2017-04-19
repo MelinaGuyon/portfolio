@@ -11,7 +11,6 @@
   &__title {
     transform: rotate(-90deg);
     position: relative;
-    bottom: 50px;
 
     .title {
       margin-left: 40px;
@@ -28,7 +27,6 @@
   &__desc {
     padding-right: 20%;
     position: relative;
-    top: 50px;
 
     &__logo {
       text-align: right;
@@ -43,6 +41,61 @@
       line-height: 1.5;
       font-size: 18px;
       color: #9E8888;
+    }
+  }
+
+  @media screen and (max-width: 940px) {
+
+    &__title {
+      .title {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      span {
+        font-size: 40px;
+      }
+    }
+
+    &__desc {
+      &__logo {
+        img {
+          height: 60px;
+        }
+      }
+      &__about {
+        line-height: auto;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    &__title {
+      left: -40px;
+
+      .title {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+
+    &__desc {
+      align-self: flex-start;
+      left: -40px;
+      padding-right: 10%;
+
+      &__logo {
+        padding-top: 20%;
+        img {
+          height: 40px;
+        }
+      }
+      &__about {
+        font-size: 14px;
+      }
     }
   }
 }

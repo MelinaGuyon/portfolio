@@ -8,7 +8,7 @@
         <div class="about__desc__logo">
           <img :src="datas.srcLogo" alt="">
         </div>
-        <p class="about__desc__about">{{ datas.desc }}</p>
+        <p class="about__desc__about" v-html="datas.desc">{{ datas.desc }}</p>
         <br>
         <p class="about__desc__about">melina.guyon@gmail.com</p>
       </div>
