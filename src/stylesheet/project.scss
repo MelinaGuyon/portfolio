@@ -294,3 +294,18 @@
   }
 
 }
+
+@media screen and (max-width: 350px) {
+
+  .project__title .name {
+    font-size: 22px;
+  }
+
+  .project__header__desc p {
+    font-size: 12px;
+  }
+
+  .project__header__nav {
+    margin-top: 30px;
+  }
+}
