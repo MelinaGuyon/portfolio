@@ -74,8 +74,8 @@ const projectDatas = {
       techno: 'Three.js',
       src : [
         'assets/projets/change-1.jpg',
-        'assets/projets/change-2.png',
-        'assets/projets/change-3.png'
+        'assets/projets/change-2.jpg',
+        'assets/projets/change-3.jpg'
       ]
     },
     {
