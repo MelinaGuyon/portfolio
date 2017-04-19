@@ -15,9 +15,9 @@ const projectDatas = {
       date: 'Mars 2017',
       techno: 'Vue.js',
       src : [
-        'assets/projets/travel-1.png',
+        'assets/projets/travel-1.jpg',
         'assets/projets/travel-2.png',
-        'assets/projets/travel-3.png',
+        'assets/projets/travel-3.jpg',
         'assets/projets/travel-4.png'
       ]
     },
@@ -86,7 +86,7 @@ const projectDatas = {
       src : [
         'assets/projets/shootmore-1.png',
         'assets/projets/shootmore-2.png',
-        'assets/projets/shootmore-3.png',
+        'assets/projets/shootmore-3.jpg',
         'assets/projets/shootmore-4.png'
       ]
     }

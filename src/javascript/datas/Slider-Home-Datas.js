@@ -9,7 +9,7 @@ const sliderHomeDatas = {
       img: true
     },
     {
-      src: 'assets/slider-home/slider-travel.png',
+      src: 'assets/slider-home/slider-travel.jpg',
       title: 'Travel Revolution',
       date: 'Mars 2017',
       projectId: 1,
@@ -49,7 +49,7 @@ const sliderHomeDatas = {
       img: true
     },
     {
-      src: 'assets/slider-home/slider-shoot.png',
+      src: 'assets/slider-home/slider-shoot.jpg',
       title: 'Shootmore',
       date: 'Juillet 2015',
       projectId : 6,
