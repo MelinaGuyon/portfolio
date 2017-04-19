@@ -149,6 +149,10 @@ class Navigation {
         alpha : 1,
         delay: 0.3
       })
+      TweenMax.set([this.el, this.navigationBurgerItems, this.navigationBurger],{
+        clearProps: "all",
+        delay: 0.6
+      })
     } else {
       this.navigationBurger.classList.add('is-closed')
       TweenLite.to(this.el, 0.3, {
