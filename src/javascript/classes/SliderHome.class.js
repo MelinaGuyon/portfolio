@@ -6,6 +6,7 @@ class SliderHome {
     STORAGE.sliderHomeClass = this
     this.el = document.querySelector('.js-home-slider')
     this.sliderMedias = this.el.querySelectorAll('.js-home-slider-media')
+    this.sliderImages = this.el.querySelectorAll('.js-home-slider-media.is-image')
     this.sliderTitles = this.el.querySelectorAll('.js-home-slider-title')
     this.sliderDates = this.el.querySelectorAll('.js-home-slider-date')
 
@@ -20,6 +21,8 @@ class SliderHome {
 
     this.swipeValue
 
+    this.initialDisplacement = [0,0]
+
     this.bind()
   }
 
@@ -29,8 +32,11 @@ class SliderHome {
     this.nextButton.addEventListener('click', that.handleClick)
     window.addEventListener('keydown', that.handleClick)
     window.addEventListener('resize', that.handleResize)
+
     window.addEventListener('touchstart', that.handleSwipeStart)
     window.addEventListener('touchend', that.handleSwipeEnd)
+
+    window.addEventListener('mousemove', that.handleMouseMove)
   }
 
   unbind() {
@@ -39,8 +45,11 @@ class SliderHome {
     this.nextButton.removeEventListener('click', that.handleClick)
     window.removeEventListener('keydown', that.handleClick)
     window.removeEventListener('resize', that.handleResize)
+
     window.removeEventListener('touchstart', that.handleSwipeStart)
     window.removeEventListener('touchend', that.handleSwipeEnd)
+
+    window.removeEventListener('mousemove', that.handleMouseMove)
   }
 
   setActive() {
@@ -160,6 +169,15 @@ class SliderHome {
       STORAGE.sliderHomeClass.handlePrevClick()
     } else if (delta < 0 && Math.abs(delta) > 100) {
       STORAGE.sliderHomeClass.handleNextClick()
+    }
+  }
+
+  handleMouseMove(e) {
+    if (STORAGE.sliderHomeClass.sliderImages[STORAGE.sliderHomeClass.index] && window.innerWidth > 640) {
+      TweenLite.set(STORAGE.sliderHomeClass.sliderImages[STORAGE.sliderHomeClass.index], {
+        x: STORAGE.sliderHomeClass.initialDisplacement[0] - (window.innerWidth / 2 - e.clientX) / 50 ,
+        y: STORAGE.sliderHomeClass.initialDisplacement[1] - (window.innerHeight / 2 - e.clientY) / 50
+      })
     }
   }
 

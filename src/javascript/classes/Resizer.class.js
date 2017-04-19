@@ -21,6 +21,7 @@ class Resizer {
         y: (homeSLider.offsetHeight - (media.offsetHeight * ratioHorizontal)) / 2,
         x: 0
       })
+      STORAGE.sliderHomeClass.initialDisplacement = [0, ((homeSLider.offsetHeight - (media.offsetHeight * ratioHorizontal)) / 2)]
     } else {
       TweenLite.set(media, {
         scaleY: ratioVertical,
@@ -30,6 +31,7 @@ class Resizer {
         x: (homeSLider.offsetWidth - (media.offsetWidth * ratioVertical)) / 2,
         y: 0
       })
+      STORAGE.sliderHomeClass.initialDisplacement = [((homeSLider.offsetWidth - (media.offsetWidth * ratioVertical)) / 2), 0]
     }
   }
 
