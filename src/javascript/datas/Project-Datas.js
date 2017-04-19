@@ -2,7 +2,7 @@ const projectDatas = {
   projects: [
     {
       title: 'Sum',
-      desc: 'Sum est le tout premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal crée dans le cadre de mon projet tuteuré de 2ème année.<br>Le journal relate les derniers évènements en date sur le campus. Il crée des liens et communique sur des sujets relatifs au thème de la vie étudiante.<br>Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
+      desc: 'Comment parler d’un sujet sérieux avec sensibilité et légèreté ?<br>Sum est une histoire qui prend la forme d’une expérience web interactive et poétique traitant du manque de confiance en soi.<br><br>L\'utilisateur incarne Sum, qui veut dire “je suis” en latin, un personnage sombre et peu sûr de lui. A l’aide du sage Albus, il se lance dans une quête initiatique semé d\'embuches qui feront de lui un être accompli et bien dans sa peau.',
       date: 'En cours de réalisation',
       techno: 'Pixi.js',
       src : [
@@ -11,7 +11,7 @@ const projectDatas = {
     },
     {
       title: 'Travel Revolution',
-      desc: 'Travel est le tout premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal crée dans le cadre de mon projet tuteuré de 2ème année.<br>Le journal relate les derniers évènements en date sur le campus. Il crée des liens et communique sur des sujets relatifs au thème de la vie étudiante.<br>Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
+      desc: 'Travel revolution est un site web qui présente les innovations technologiques de, Septembre 2015 à Mars 2017, dans le domaine du voyage. Les choses autour de nous évoluent constamment et nous ne pouvons pas nous rendre compte de tout. Travel revolution nous propose de prendre notre temps et de découvrir ce qu’on a manqué.<br><br>J’ai réalisé ce projet dans le cadre d’un exercice de veille technologique à l’école des Gobelins.',
       date: 'Mars 2017',
       techno: 'Vue.js',
       url: 'http://guyonmelina.fr/projets/travel',
@@ -24,7 +24,7 @@ const projectDatas = {
     },
     {
       title: 'Terre Promise',
-      desc: 'Terre Promise est le tout premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal crée dans le cadre de mon projet tuteuré de 2ème année.<br>Le journal relate les derniers évènements en date sur le campus. Il crée des liens et communique sur des sujets relatifs au thème de la vie étudiante.<br>Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
+      desc: 'Terre promise est un projet de data visualisation. Il récupère des données récoltées d’un sondage et nous renseigne sur les différents pays où sont partis s’installer les anciens étudiants de Gobelins. L’utilisateur peut filtrer les données par année et par formation suivie.<br><br>J’ai réalisé ce projet lors d’un workshop à l’école des Gobelins.',
       date: 'Décembre 2016',
       techno: 'D3.js',
       src : [
@@ -35,7 +35,7 @@ const projectDatas = {
     },
     {
       title: 'NoSheetPaper',
-      desc: 'NoSheetPaper est le tout premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal crée dans le cadre de mon projet tuteuré de 2ème année.<br>Le journal relate les derniers évènements en date sur le campus. Il crée des liens et communique sur des sujets relatifs au thème de la vie étudiante.<br>Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
+      desc: 'NoSheetPaper est le premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal.<br><br>Le journal relate les derniers évènements en date sur le campus. Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
       date: 'Avril 2016',
       techno: 'Symfony 2',
       src : [
