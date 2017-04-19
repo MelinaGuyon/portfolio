@@ -66,6 +66,7 @@ class SliderProject {
     const date = desc.querySelector('.date')
     const techno = desc.querySelector('.techno')
     const text = desc.querySelector('.text')
+    const link = desc.querySelector('.link')
     TweenLite.set(this.activeProject, {
       display: "block"
     })
@@ -92,6 +93,13 @@ class SliderProject {
       y: 30,
       delay: 0.8
     })
+    if (link) {
+      TweenLite.from(link, 0.6, {
+        alpha: 0,
+        y: 30,
+        delay: 1
+      })
+    }
   }
 
   handlePrevClick() {
