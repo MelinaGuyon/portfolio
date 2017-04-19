@@ -76,10 +76,17 @@
       color: #9E8888;
       opacity: 1;
 
-      &.date {
+      &.date, &.vue {
         position: relative;
         left: -10px;
       }
+    }
+
+    a {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
     }
   }
 
