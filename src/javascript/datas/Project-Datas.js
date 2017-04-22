@@ -5,7 +5,7 @@ const projectDatas = {
       desc: 'How to deals with a serious subject with sensitivity and lightness ?<br><br>Sum is an history about self-confidence. It is build as an interactive and poetic web experience.<br><br>The user embodies Sum, which means “I am” in latin, a dark and unsure character. With the help of the wise Albus, he engages himself in a deep initiation quest which will turn him in a good all-round human being in peace with himself.',
       date: 'In progress',
       techno: 'Pixi.js',
-      team: '<span>Team:</span><br>Marine Laveau - Design<br>Sandy Dauneau - Design<br>Alicia Baudry - Development',
+      team: '<span>Team:</span><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a><br><a href="http://sandydauneau.fr/" target="_blank">Sandy Dauneau - Design</a><br><a href="http://aliciabaudry.com/" target="_blank">Alicia Baudry - Development</a>',
       role: '<span>Role:</span><br>Development',
       src : [
         'assets/projets/sum-1.jpg'
@@ -14,8 +14,8 @@ const projectDatas = {
     {
       title: 'Travel Revolution',
       desc: 'Travel revolution is a website which introduces technological innovations in the travel sector between Septembre 2015 to March 2017. Things around us are constantly evolving and we cannot be aware of everything at anytime. Travel revolution suggests us to take our time for a while and discover what we missed.',
-      team: '<span>Team:</span><br>Marine Laveau - Design<br>Charlie Le Maignan - Design<br>Adrien Lamy - Development',
-      role: '<span>Role:</span><br>Development',
+      team: '<span>Team:</span><br><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a><br><a href="https://dribbble.com/CharlieLeMaignan" target="_blank">Charlie Le Maignan - Design</a><br><a href="https://www.linkedin.com/in/adrien-lamy-434726b0/?ppe=1" target="_blank">Adrien Lamy - Development',
+      role: '<span>Role:</span><br>Development</a>',
       date: 'March 2017',
       techno: 'Vue.js',
       url: 'http://guyonmelina.fr/projets/travel',
@@ -31,7 +31,7 @@ const projectDatas = {
       desc: 'Promised Land is a data visualization project. It retrieves datas collected by a survey and enquires us about the different countries where Gobelins’ alumni went to live. The user can filter datas by year and/or training pursued.',
       date: 'December 2016',
       techno: 'D3.js',
-      team: '<span>Team:</span><br>Marine Laveau - Design',
+      team: '<span>Team:</span><br><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a>',
       role: '<span>Role:</span><br>Development',
       src : [
         'assets/projets/terre-promise-1.jpg',
@@ -44,7 +44,7 @@ const projectDatas = {
       desc: 'NoSheetPaper is the first online newspaper of the University of Paris-Est Marne-la-Vallée. It is the main project of the Aujour’nal journalistic association.<br><br>The newspaper relates the latest news on campus. Its aim is to is bring people together around an interactive and participative media. Each registered user can write and post an article on the platform. The article can then be checked by moderators before being published.',
       date: 'April 2016',
       techno: 'Symfony 2',
-      team: '<span>Team:</span><br>Ludovic Bouvinet - Development<br>Luc Marie - Design, Development<br>Loris Larade - Communication',
+      team: '<span>Team:</span><br><a href="http://www.ludovicbouvinet.fr/" target="_blank">Ludovic Bouvinet - Development</a><br><a href="http://lucmarie.com/" target="_blank">Luc Marie - Design, Development</a><br><a href="https://www.linkedin.com/in/loris-larade-464196ba/?ppe=1" target="_blank">Loris Larade - Communication</a>',
       role: '<span>Role:</span><br>Project Managment, Development, Association Presidency',
       src : [
         'assets/projets/nosheetpaper-1.jpg',
