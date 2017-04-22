@@ -1,6 +1,6 @@
 const aboutDatas = {
-  title: "About",
-  desc: "Hello there !<br><br>Je m’appelle Mélina Guyon, j’ai 21 ans et je suis une développeuse front-end créative basée à Paris.<br><br>Je vis ma passion pour le multimédia tous les jours depuis 3 ans. J’étudie à Gobelins, l’école de l’image, en Bachelor Designer et Développeur Interactif, option développement.<br><br>Mon attrait pour le développement vient du fait qu’il y a toujours de nouvelles choses à découvrir et à réaliser en terme technique. J’aime produire du code fonctionnel, optimisé et propre. Du code qui donne vie à nos projets.<br><br>J’adore penser des interfaces interactives qui ont un sens. Des interfaces qui nous délivrent un message ou nous comptent une histoire, nous emportent.",
+  title: 'About',
+  desc: 'Hello there!<br><br>My name is Melina Guyon. I am 21 years old and I am a creative front-end developer based in Paris. I live my passion for the multimedia everyday since 3 years now.<br><br>I study at Gobelins, l’école de l’image. I follow the Bachelor degree “Interactive Designers and Developers” in development option.<br><br>My interest for development comes from the fact that there are always new things to discover and achieve with technology. I like to produce functional and optimized code. Code giving life to our projects.<br><br>I love to think about meaningful interactive interfaces. Interfaces which deliver a message, or tell a story. Interfaces which take us away.',
   srcLogo: "assets/logo.png"
 }
 

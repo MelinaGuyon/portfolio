@@ -67,6 +67,7 @@ class SliderProject {
     const techno = desc.querySelector('.techno')
     const text = desc.querySelector('.text')
     const link = desc.querySelector('.link')
+    const roles = desc.querySelector('.roles')
     TweenLite.set(this.activeProject, {
       display: "block"
     })
@@ -76,7 +77,7 @@ class SliderProject {
     TweenLite.from(title, 0.4, {
       alpha: 0,
       bottom: '55%',
-      delay: 1
+      delay: 1.2
     })
     TweenLite.from(date, 0.6, {
       alpha: 0,
@@ -97,9 +98,14 @@ class SliderProject {
       TweenLite.from(link, 0.6, {
         alpha: 0,
         y: 30,
-        delay: 1
+        delay: 0.8
       })
     }
+    TweenLite.from(roles, 0.6, {
+      alpha: 0,
+      y: 30,
+      delay: 1
+    })
   }
 
   handlePrevClick() {

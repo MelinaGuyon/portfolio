@@ -34,7 +34,7 @@
 
   .type {
     font-family: 'Bodoni';
-    font-size: 40px;
+    font-size: 35px;
     color: #9E8888;
     opacity: 0.5;
     margin-bottom: 20px;
@@ -72,18 +72,30 @@
       left: 0;
       text-align: justify;
       line-height: 1.5;
-      font-size: 18px;
+      font-size: 17px;
       color: #9E8888;
       opacity: 1;
 
-      &.date, &.vue {
+      &.date, &.vue, &.link {
         position: relative;
         left: -10px;
       }
     }
 
+    .roles {
+      display: flex;
+      p {
+        text-align: left;
+        width: 50%;
+
+        span {
+          font-family: 'bodoni';
+          color: #E79898;
+        }
+      }
+    }
+
     a {
-      margin-top: 10px;
       display: inline-block;
       text-decoration: none;
       color: inherit;
@@ -95,7 +107,7 @@
     position: relative;
     left: 80%;
     top: 30%;
-    margin-top: 70px;
+    margin-top: 40px;
 
     .arrow-prev, .arrow-next {
       position: relative;
@@ -174,7 +186,7 @@
   }
 
   .project__header__nav {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .project__images {
@@ -222,7 +234,7 @@
     padding-right: 13%;
 
     p {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 }
@@ -231,6 +243,7 @@
   .project__title {
     width: 100vh;
     left: 16%;
+    bottom: 55%;
 
     .type {
       display: none;
@@ -245,10 +258,17 @@
       padding-left: 15%;
       padding-right: 5%;
       p {
-        font-size: 14px;
+        font-size: 12px;
 
         &.techno {
           margin-bottom: 0;
+        }
+      }
+
+      .roles {
+        display: block;
+        p {
+          width: 100%;
         }
       }
     }
@@ -302,10 +322,10 @@
   }
 
   .project__header__desc p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .project__header__nav {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }

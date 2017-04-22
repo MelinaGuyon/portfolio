@@ -2,17 +2,21 @@ const projectDatas = {
   projects: [
     {
       title: 'Sum',
-      desc: 'Comment parler d’un sujet sérieux avec sensibilité et légèreté ?<br>Sum est une histoire qui prend la forme d’une expérience web interactive et poétique traitant du manque de confiance en soi.<br><br>L\'utilisateur incarne Sum, qui veut dire “je suis” en latin, un personnage sombre et peu sûr de lui. A l’aide du sage Albus, il se lance dans une quête initiatique semé d\'embuches qui feront de lui un être accompli et bien dans sa peau.',
-      date: 'En cours de réalisation',
+      desc: 'How to deals with a serious subject with sensitivity and lightness ?<br><br>Sum is an history about self-confidence. It is build as an interactive and poetic web experience.<br><br>The user embodies Sum, which means “I am” in latin, a dark and unsure character. With the help of the wise Albus, he engages himself in a deep initiation quest which will turn him in a good all-round human being in peace with himself.',
+      date: 'In progress',
       techno: 'Pixi.js',
+      team: '<span>Team:</span><br>Marine Laveau - Design<br>Sandy Dauneau - Design<br>Alicia Baudry - Development',
+      role: '<span>Role:</span><br>Development',
       src : [
         'assets/projets/sum-1.jpg'
       ]
     },
     {
       title: 'Travel Revolution',
-      desc: 'Travel revolution est un site web qui présente les innovations technologiques de, Septembre 2015 à Mars 2017, dans le domaine du voyage. Les choses autour de nous évoluent constamment et nous ne pouvons pas nous rendre compte de tout. Travel revolution nous propose de prendre notre temps et de découvrir ce qu’on a manqué.<br><br>J’ai réalisé ce projet dans le cadre d’un exercice de veille technologique à l’école des Gobelins.',
-      date: 'Mars 2017',
+      desc: 'Travel revolution is a website which introduces technological innovations in the travel sector between Septembre 2015 to March 2017. Things around us are constantly evolving and we cannot be aware of everything at anytime. Travel revolution suggests us to take our time for a while and discover what we missed.',
+      team: '<span>Team:</span><br>Marine Laveau - Design<br>Charlie Le Maignan - Design<br>Adrien Lamy - Development',
+      role: '<span>Role:</span><br>Development',
+      date: 'March 2017',
       techno: 'Vue.js',
       url: 'http://guyonmelina.fr/projets/travel',
       src : [
@@ -23,10 +27,12 @@ const projectDatas = {
       ]
     },
     {
-      title: 'Terre Promise',
-      desc: 'Terre promise est un projet de data visualisation. Il récupère des données récoltées d’un sondage et nous renseigne sur les différents pays où sont partis s’installer les anciens étudiants de Gobelins. L’utilisateur peut filtrer les données par année et par formation suivie.<br><br>J’ai réalisé ce projet lors d’un workshop à l’école des Gobelins.',
-      date: 'Décembre 2016',
+      title: 'Promised Land',
+      desc: 'Promised Land is a data visualization project. It retrieves datas collected by a survey and enquires us about the different countries where Gobelins’ alumni went to live. The user can filter datas by year and/or training pursued.',
+      date: 'December 2016',
       techno: 'D3.js',
+      team: '<span>Team:</span><br>Marine Laveau - Design',
+      role: '<span>Role:</span><br>Development',
       src : [
         'assets/projets/terre-promise-1.jpg',
         'assets/projets/terre-promise-2.png',
@@ -35,9 +41,11 @@ const projectDatas = {
     },
     {
       title: 'NoSheetPaper',
-      desc: 'NoSheetPaper est le premier journal en ligne de l’Université de Paris-Est Marne-la-Vallée. ll est le principal projet de l’association journalistique Aujour’nal.<br><br>Le journal relate les derniers évènements en date sur le campus. Son objectif est de réunir tous les étudiants du campus autour d’un média commun interactif et participatif. Chaque utilisateur inscrit peut rédiger et poster un article sur la plateforme. Une modération s’effectue ensuite avant la publication de ce dernier.',
-      date: 'Avril 2016',
+      desc: 'NoSheetPaper is the first online newspaper of the University of Paris-Est Marne-la-Vallée. It is the main project of the Aujour’nal journalistic association.<br><br>The newspaper relates the latest news on campus. Its aim is to is bring people together around an interactive and participative media. Each registered user can write and post an article on the platform. The article can then be checked by moderators before being published.',
+      date: 'April 2016',
       techno: 'Symfony 2',
+      team: '<span>Team:</span><br>Ludovic Bouvinet - Development<br>Luc Marie - Design, Development<br>Loris Larade - Communication',
+      role: '<span>Role:</span><br>Project Managment, Development, Association Presidency',
       src : [
         'assets/projets/nosheetpaper-1.jpg',
         'assets/projets/nosheetpaper-2.jpg'
@@ -50,9 +58,10 @@ const projectDatas = {
     },
     {
       title: 'Memo’s',
-      desc: 'Memo’s est une application mobile hybride qui permet à chaque utilisateur d’enregistrer des fiches des films qui l’interessent et de les classer dans des rubriques selon leur genre. Ils peuvent ensuite voir, éditer ou supprimer la fiche quand le film a été visualisé.<br><br>L’application permet aussi de se géolocaliser afin de se tenir informé des cinémas présents autour de soi.',
-      date: 'Janvier 2016',
+      desc: 'Memo’s is a hybrid mobile application which enables a user to register reminder cards of movies he wants to watch later. He can order them in different categories according to movies’ genres. He can later edit or delete a card when its movie has been watched.<br><br>The application allows also to geolocate cinemas around the user.',
+      date: 'January 2016',
       techno: 'Ionic - Cordova - Angular.js',
+      role: '<span>Role:</span><br>Development, Design',
       src : [
         'assets/projets/memos-1.jpg'
       ],
@@ -70,9 +79,10 @@ const projectDatas = {
     },
     {
       title: 'Change Something',
-      desc: 'Change Something est une expérience web à orientation écologique sortie pour la nouvelle année 2016. Elle met en scène notre belle planète et la présente de façon poétique.</br></br>Lors de l’expérience l’utilisateur peut choisir d\'adopter des résolutions favorables à l\'environnement parmis la cinquantaine de bons gestes qui lui sont proposés.',
-      date: 'Janvier 2016',
+      desc: 'Change Something is an ecological-oriented web experience. The project came online for new year day 2016. It stages our beautiful planet and presents it in a very poetical way.<br><br>During the experience, the user can choose to adopt new green resolutions among the fifty good daily ecological gestures proposed to him.',
+      date: 'January 2016',
       techno: 'Three.js',
+      role: '<span>Role:</span><br>Development, Design',
       src : [
         'assets/projets/change-1.jpg',
         'assets/projets/change-2.jpg',
@@ -81,9 +91,11 @@ const projectDatas = {
     },
     {
       title: 'ShootMore',
-      desc: 'ShootMore est un site web qui présente les 40 plus belles photographies de son détenteur. Il peut les actualiser à tout moment et les ranger par collections afin de modeler son site selon ses envies. Le passage d’une collection de clichés à une autre est marquée par la fermeture ou l’ouverture d’un iris d’appareil photo.<br><br>J’ai réalisé ce projet lors mon stage de développement web chez l\'entreprise Créaktif.',
-      date: 'Juillet 2015',
+      desc: 'ShootMore is a website which introduces the forty most beautiful photograph of its owner. He can update them anytime he wants and order them by collections. The transition between collections is characterised by the opening or the closing of a camera’s iris.',
+      date: 'July 2015',
       techno: 'Pixi.js',
+      team: '<span>Team:</span><br>Creaktif Agency',
+      role: '<span>Role:</span><br>Development',
       src : [
         'assets/projets/shootmore-1.png',
         'assets/projets/shootmore-2.png',

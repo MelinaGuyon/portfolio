@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="type"><span>-</span><span class="title">Projet</span><span>-</span></p>
+    <p class="type"><span>-</span><span class="title">Project</span><span>-</span></p>
     <p class="name">{{ project.title }}</p>
   </div>
 </template>
