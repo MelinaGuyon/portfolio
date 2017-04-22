@@ -11,21 +11,21 @@ const labDatas = {
       title: 'Shape Generation',
       date: 'December 2016',
       techno: 'Three.js',
-      src : 'assets/labs/shape.mov',
+      src : 'assets/labs/shape.mp4',
       codepenUrl : 'http://codepen.io/MelinaGuyon/pen/NdLMWy'
     },
     {
       title: 'Audio Fire',
       date: 'November 2016',
       techno: 'Web audio API',
-      src : 'assets/labs/fire.mov',
+      src : 'assets/labs/fire.mp4',
       codepenUrl: 'http://codepen.io/MelinaGuyon/pen/LRKpRb'
     },
     {
       title: 'Mouse Following',
       date: 'October 2016',
       techno: 'Canvas',
-      src : 'assets/labs/triangles.mov',
+      src : 'assets/labs/triangles.mp4',
       codepenUrl: 'http://codepen.io/MelinaGuyon/pen/vXrOwd'
     }
   ]

@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --port $npm_package_config_port",
     "https": "webpack-dev-server --port $npm_package_config_port --https",
-    "build": "mkdir build & cp ./src/*.html ./build/ & cp -R ./src/assets ./build/assets & webpack -p"
+    "build": "mkdir build & cp ./src/*.html ./build/ & cp ./src/assets ./build/assets & webpack -p"
   },
   "dependencies": {
     "babel-core": "^6.23.1",
@@ -28,6 +28,7 @@
   },
   "paths": {},
   "devDependencies": {
-    "image-webpack-loader": "^3.3.0"
+    "image-webpack-loader": "^3.3.0",
+    "uglify-js": "^2.8.22"
   }
 }

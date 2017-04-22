@@ -15,6 +15,8 @@ class Navigation {
 
     this.projectPointers
 
+    this.name = document.querySelectorAll('.js-name')
+
     this.bind(true)
     this.init()
   }
@@ -54,6 +56,14 @@ class Navigation {
         delay:0.9
       })
     }
+    
+    this.name = document.querySelectorAll('.js-name')
+    if (window.innerWidth > 640) {
+      TweenMax.from(this.name, 0.3, {
+        scaleY: 0,
+        delay:0.9
+      })
+    }
   }
 
   animateSection() {
@@ -74,7 +84,6 @@ class Navigation {
   }
 
   handleItemClick(e) {
-    this.animateNav()
     STORAGE.gridClass.animateGrid()
 
     this.prevActiveSection = this.activeSection
@@ -85,6 +94,7 @@ class Navigation {
     this.activeSection = document.querySelector(e.target.getAttribute('data-target'))
 
     this.animateSection()
+    this.animateNav()
 
     if (window.innerWidth < 640) {
       this.handleBurgerClick()

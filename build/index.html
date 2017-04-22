@@ -5,24 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Melina Guyon</title>
-
-  <!-- Webpack Magic -->
   <link rel="stylesheet" href="stylesheet/main.css">
 </head>
 <body>
-    <div class="grid">
-      <div class="grid__col-1"></div>
-      <div class="grid__col-2"></div>
-    </div>
-    <section id="home" class="home">
-      <div class="home__container">
-        <div v-for="slide in slider" class="home__slider">
-          <img class="home__slider__img" :src="slide.src" alt="">
-        </div>
-      </div>
-    </section>
-
-    <!-- Webpack Magic -->
-    <script src="javascript/bundle.js"></script>
+  <div id="nav"></div>
+  <div id="grid"></div>
+  <div id="home"></div>
+  <div id="about"></div>
+  <div id="project"></div>
+  <div id="lab"></div>
+  <script src="javascript/bundle.js"></script>
 </body>
 </html>
