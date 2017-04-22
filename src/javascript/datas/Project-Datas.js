@@ -14,7 +14,7 @@ const projectDatas = {
     {
       title: 'Travel Revolution',
       desc: 'Travel revolution is a website which introduces technological innovations in the travel sector between Septembre 2015 to March 2017. Things around us are constantly evolving and we cannot be aware of everything at anytime. Travel revolution suggests us to take our time for a while and discover what we missed.',
-      team: '<span>Team:</span><br><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a><br><a href="https://dribbble.com/CharlieLeMaignan" target="_blank">Charlie Le Maignan - Design</a><br><a href="https://www.linkedin.com/in/adrien-lamy-434726b0/?ppe=1" target="_blank">Adrien Lamy - Development',
+      team: '<span>Team:</span><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a><br><a href="https://dribbble.com/CharlieLeMaignan" target="_blank">Charlie Le Maignan - Design</a><br><a href="https://www.linkedin.com/in/adrien-lamy-434726b0/?ppe=1" target="_blank">Adrien Lamy - Development',
       role: '<span>Role:</span><br>Development</a>',
       date: 'March 2017',
       techno: 'Vue.js',
@@ -31,7 +31,7 @@ const projectDatas = {
       desc: 'Promised Land is a data visualization project. It retrieves datas collected by a survey and enquires us about the different countries where Gobelins’ alumni went to live. The user can filter datas by year and/or training pursued.',
       date: 'December 2016',
       techno: 'D3.js',
-      team: '<span>Team:</span><br><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a>',
+      team: '<span>Team:</span><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a>',
       role: '<span>Role:</span><br>Development',
       src : [
         'assets/projets/terre-promise-1.jpg',
