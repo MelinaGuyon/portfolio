@@ -37,6 +37,7 @@ class SliderHome {
     window.addEventListener('touchend', that.handleSwipeEnd)
 
     window.addEventListener('mousemove', that.handleMouseMove)
+    window.addEventListener('mousewheel', that.handleScroll)
   }
 
   unbind() {
@@ -50,6 +51,7 @@ class SliderHome {
     window.removeEventListener('touchend', that.handleSwipeEnd)
 
     window.removeEventListener('mousemove', that.handleMouseMove)
+    window.removeEventListener('mousewheel', that.handleScroll)
   }
 
   setActive() {
@@ -171,6 +173,23 @@ class SliderHome {
       STORAGE.sliderHomeClass.handleNextClick()
     }
   }
+
+  handleScroll(e) {
+      e.preventDefault()
+      if (e.deltaY < -70) {
+        STORAGE.sliderHomeClass.handlePrevClick()
+        window.removeEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
+        setTimeout(function() {
+          window.addEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
+        }, 1000)
+      } else if (e.deltaY > 70) {
+        STORAGE.sliderHomeClass.handleNextClick()
+        window.removeEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
+        setTimeout(function() {
+          window.addEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
+        }, 1000)
+      }
+    }
 
   handleMouseMove(e) {
     if (STORAGE.sliderHomeClass.sliderImages[STORAGE.sliderHomeClass.index] && window.innerWidth > 640) {

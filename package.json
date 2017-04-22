@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --port $npm_package_config_port",
     "https": "webpack-dev-server --port $npm_package_config_port --https",
-    "build": "mkdir build & cp ./src/*.html ./build/ & cp ./src/assets ./build/assets & webpack -p"
+    "build": "mkdir build & cp ./src/*.html ./build/ & cp ./src/assets ./build/assets & cp ./src/fonts ./build/fonts & webpack -p"
   },
   "dependencies": {
     "babel-core": "^6.23.1",

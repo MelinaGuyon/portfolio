@@ -56,7 +56,7 @@ class Navigation {
         delay:0.9
       })
     }
-    
+
     this.name = document.querySelectorAll('.js-name')
     if (window.innerWidth > 640) {
       TweenMax.from(this.name, 0.3, {
@@ -220,10 +220,14 @@ class Navigation {
     if (STORAGE.sliderLabClass)
       STORAGE.sliderLabClass.unbind()
 
+    document.body.style.overflow = 'auto'
+
     if (this.activeSectionName == '#homeProject') {
       STORAGE.vueBuilderClass.initHome(STORAGE.currentProjectIndex, 'project')
+      document.body.style.overflow = 'hidden'
     } else if (this.activeSectionName == '#homeLab') {
       STORAGE.vueBuilderClass.initHome((7 + STORAGE.currentLabIndex), 'lab')
+      document.body.style.overflow = 'hidden'
     } else if (this.activeSectionName == '#about') {
       STORAGE.vueBuilderClass.initAbout()
     } else if (this.activeSectionName == '#project') {
