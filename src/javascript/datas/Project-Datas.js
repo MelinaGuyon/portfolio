@@ -2,13 +2,14 @@ const projectDatas = {
   projects: [
     {
       title: 'Sum',
-      desc: 'How to deals with a serious subject with sensitivity and lightness ?<br><br>Sum is an history about self-confidence. It is build as an interactive and poetic web experience.<br><br>The user embodies Sum, which means “I am” in latin, a dark and unsure character. With the help of the wise Albus, he engages himself in a deep initiation quest which will turn him in a good all-round human being in peace with himself.',
+      desc: 'How to deals with a serious subject with sensitivity and lightness ?<br><br>Sum is an history about self-confidence. It is build as an interactive and poetic web experience.<br><br>The user embodies Sum, which means “I am” in latin, a dark and unsure character. With the help of the wise Albus, he engages himself in a deep initiation quest which will turn him in a good all-rounded human being in peace with himself.',
       date: 'In progress',
       techno: 'Pixi.js',
       team: '<span>Team:</span><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a><br><a href="http://sandydauneau.fr/" target="_blank">Sandy Dauneau - Design</a><br><a href="http://aliciabaudry.com/" target="_blank">Alicia Baudry - Development</a>',
       role: '<span>Role:</span><br>Development',
       src : [
-        'assets/projets/sum-1.jpg'
+        'assets/projets/sum-1.jpg',
+        'assets/projets/sum-2.jpg'
       ]
     },
     {
@@ -28,7 +29,7 @@ const projectDatas = {
     },
     {
       title: 'Promised Land',
-      desc: 'Promised Land is a data visualization project. It retrieves datas collected by a survey and enquires us about the different countries where Gobelins’ alumni went to live. The user can filter datas by year and/or training pursued.',
+      desc: 'Promised Land is a data visualization project. It retrieves the data collected by surveys and enquires us about the different countries where Gobelins’ alumni went to live. The user can filter datas by year and/or studies pursued.',
       date: 'December 2016',
       techno: 'D3.js',
       team: '<span>Team:</span><br><a href="http://marinelavaud.fr/index.html" target="_blank">Marine Laveau - Design</a>',
@@ -79,7 +80,7 @@ const projectDatas = {
     },
     {
       title: 'Change Something',
-      desc: 'Change Something is an ecological-oriented web experience. The project came online for new year day 2016. It stages our beautiful planet and presents it in a very poetical way.<br><br>During the experience, the user can choose to adopt new green resolutions among the fifty good daily ecological gestures proposed to him.',
+      desc: 'Change Something is an ecological-oriented web experience. The project went live for new year day 2016. It stages our beautiful planet and presents it in a very poetical way.<br><br>During the experience, the user can choose to adopt new green resolutions among the fifty good daily ecological gestures proposed to him.',
       date: 'January 2016',
       techno: 'Three.js',
       role: '<span>Role:</span><br>Development, Design',

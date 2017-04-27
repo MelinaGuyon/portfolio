@@ -11,9 +11,9 @@
         <p class="about__desc__about" v-html="datas.desc">{{ datas.desc }}</p>
         <br>
         <p class="about__desc__about">If you’d like to chat <a href="" href="mailto:guyonmelina@gmail.com" target="_blank">contact me.</a></p>
-        <p class="about__desc__about">You can also find me there : <a href="https://twitter.com/MelinaGuyon" target="_blank">Twitter</a> - <a href="https://github.com/MelinaGuyon" target="_blank">GiHub</a> - <a href="http://codepen.io/MelinaGuyon/" target="_blank">CodePen</a></p>
+        <p class="about__desc__about">You can also find me there : <a href="https://twitter.com/MelinaGuyon" target="_blank">Twitter</a> - <a href="https://github.com/MelinaGuyon" target="_blank">GitHub</a> - <a href="http://codepen.io/MelinaGuyon/" target="_blank">CodePen</a></p>
         <br>
-        <p class="about__desc__about designed"><a href="" href="https://www.behance.net/AxlPasquier" target="_blank">Designed by Axelle Pasqiuer</a></p>
+        <p class="about__desc__about designed"><a href="" href="https://www.behance.net/AxlPasquier" target="_blank">Designed by Axelle Pasquier</a></p>
       </div>
     </div>
   </div>
