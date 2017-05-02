@@ -10,7 +10,7 @@
       <div class="lab__desc">
         <div class="desc">
           <p class="title">{{ lab.title }}</p>
-          <p class="date">Date : {{ lab.date }}</p>
+          <p class="date">{{ lab.date }}</p>
           <p class="techno">Technology : {{ lab.techno }}</p>
         </div>
         <div class="lab__desc__nav">

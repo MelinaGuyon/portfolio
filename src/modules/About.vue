@@ -10,8 +10,8 @@
         </div>
         <p class="about__desc__about" v-html="datas.desc">{{ datas.desc }}</p>
         <br>
-        <p class="about__desc__about">If you’d like to chat <a href="" href="mailto:guyonmelina@gmail.com" target="_blank">contact me.</a></p>
-        <p class="about__desc__about">You can also find me there : <a href="https://twitter.com/MelinaGuyon" target="_blank">Twitter</a> - <a href="https://github.com/MelinaGuyon" target="_blank">GitHub</a> - <a href="http://codepen.io/MelinaGuyon/" target="_blank">CodePen</a></p>
+        <p class="about__desc__about">If you’d like to chat <a class="about-links" href="mailto:guyonmelina@gmail.com" target="_blank">contact me.</a><br>Or you can check <a class="about-links" href="http://localhost:3000/assets/Melina-Guyon-CV.pdf" target="_blank">my resume.</a></p>
+        <p class="about__desc__about">You can also find me there : <a class="about-links" href="https://twitter.com/MelinaGuyon" target="_blank">Twitter</a> - <a class="about-links" href="https://github.com/MelinaGuyon" target="_blank">GitHub</a> - <a class="about-links" href="http://codepen.io/MelinaGuyon/" target="_blank">CodePen</a> - <a class="about-links" href="https://www.linkedin.com/in/melina-guyon-488107b5/" target="_blank">LinkedIn</a></p>
         <br>
         <p class="about__desc__about designed"><a href="" href="https://www.behance.net/AxlPasquier" target="_blank">Designed by Axelle Pasquier</a></p>
       </div>

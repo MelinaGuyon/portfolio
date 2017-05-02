@@ -2,7 +2,7 @@
   <div class="project__header">
     <div class="project__header__desc">
       <p class="date">- {{ project.date }} -</p>
-      <p class="techno">{{ project.techno }}</p>
+      <p class="techno">Technology : {{ project.techno }}</p>
       <p class="text" v-html="project.desc">{{ project.desc }}</p>
       <p class="link" v-if="project.url"><a :href="project.url" target="_blank">- See the project -</a></p>
       <p class="code-link" v-if="project.gitHubUrl"><a :href="project.gitHubUrl" target="_blank">- See the code -</a></p>

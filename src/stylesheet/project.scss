@@ -82,6 +82,12 @@
       }
     }
 
+    .date {
+      font-family: 'Bodoni';
+      color: #E79898;
+      font-size: 18px;
+    }
+
     .roles {
       display: flex;
       p {
@@ -89,6 +95,7 @@
         width: 50%;
 
         span {
+          font-size: 18px;
           font-family: 'Bodoni';
           color: #E79898;
         }
@@ -105,14 +112,15 @@
   &__nav {
     display: inline-block;
     position: relative;
-    left: 80%;
+    left: 100%;
+    transform: translateX(-100%);
     top: 30%;
     margin-top: 40px;
 
     .arrow-prev, .arrow-next {
       position: relative;
-      width: 12px;
-      height: 12px;
+      width: 13px;
+      height: 13px;
       border-left: 2px solid #9E8888;
       border-top: 2px solid #9E8888;
     }
@@ -122,6 +130,11 @@
       transform: rotate(-45deg);
       margin-bottom: 10px;
       cursor: pointer;
+
+      &:hover {
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+      }
     }
 
     .arrow-next {
@@ -129,6 +142,11 @@
       transform: rotate(135deg);
       margin-top: 10px;
       cursor: pointer;
+
+      &:hover {
+        opacity: 0.4;
+        transition: opacity 0.3s ease;
+      }
     }
   }
 }
@@ -236,6 +254,14 @@
     p {
       font-size: 14px;
     }
+
+    .date {
+      font-size: 14px;
+    }
+
+    .roles p span {
+      font-size: 14px;
+    }
   }
 }
 
@@ -263,18 +289,26 @@
         &.techno {
           margin-bottom: 0;
         }
+        &.date {
+          font-size: 14px;
+        }
       }
 
       .roles {
         display: block;
         p {
           width: 100%;
+
+          span {
+            font-size: 12px;
+          }
         }
       }
     }
 
     &__nav {
       left: 42%;
+      transform: none;
 
       .arrow-prev, .arrow-next {
         width: 8px;

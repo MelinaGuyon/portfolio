@@ -2,12 +2,12 @@
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 
   &__name {
     margin: 0;
     position: absolute;
     bottom: 50%;
-    font-size: 14px;
     text-align: center;
     transform: rotate(-90deg);
     left: 10px;
@@ -15,7 +15,7 @@
 
     span {
       display: inline-block;
-      font-size: 12px;
+      font-size: 13px;
       color: #9E8888;
       font-family: 'helvetica';
       transform: scaleY(1);
@@ -24,6 +24,7 @@
 
     span:nth-child(1) {
       color: #E79898;
+      font-size: 15px;
     }
   }
 
@@ -60,6 +61,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    overflow: hidden;
 
     &__nav {
       position: absolute;
@@ -67,8 +69,8 @@
 
       .arrow-prev, .arrow-next {
         position: relative;
-        width: 10px;
-        height: 10px;
+        width: 13px;
+        height: 13px;
         border-left: 2px solid #9E8888;
         border-top: 2px solid #9E8888;
       }
@@ -78,6 +80,11 @@
         transform: rotate(-45deg);
         margin-bottom: 10px;
         cursor: pointer;
+
+        &:hover {
+          opacity: 0.4;
+          transition: opacity 0.3s ease;
+        }
       }
 
       .arrow-next {
@@ -85,6 +92,11 @@
         transform: rotate(135deg);
         margin-top: 10px;
         cursor: pointer;
+
+        &:hover {
+          opacity: 0.4;
+          transition: opacity 0.3s ease;
+        }
       }
     }
 
@@ -124,6 +136,15 @@
         margin: 0;
         opacity: 0;
         display: none;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: -1000%;
+          left: 0;
+          width: 800%;
+          height: 1500%;
+        }
       }
 
       .date {
@@ -204,6 +225,7 @@
       left: 50%;
       transform: translateX(-50%);
       padding: 20px;
+      width: 100%;
 
       span {
         color: #ffffff;

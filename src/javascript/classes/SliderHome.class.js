@@ -176,13 +176,13 @@ class SliderHome {
 
   handleScroll(e) {
       e.preventDefault()
-      if (e.deltaY < -70) {
+      if (e.deltaY < -30) {
         STORAGE.sliderHomeClass.handlePrevClick()
         window.removeEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
         setTimeout(function() {
           window.addEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
         }, 1000)
-      } else if (e.deltaY > 70) {
+      } else if (e.deltaY > 30) {
         STORAGE.sliderHomeClass.handleNextClick()
         window.removeEventListener('mousewheel', STORAGE.sliderHomeClass.handleScroll)
         setTimeout(function() {
