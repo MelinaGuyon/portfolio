@@ -19,12 +19,12 @@ class SliderProject {
 
   bind() {
     let that = this
-    this.prevButtons.forEach(function(el){
-      el.addEventListener('click', that.handleClick)
-    })
-    this.nextButtons.forEach(function(el){
-      el.addEventListener('click', that.handleClick)
-    })
+    for (var i = 0; i < this.prevButtons.length; i++) {
+      this.prevButtons[i].addEventListener('click', that.handleClick)
+    }
+    for (var i = 0; i < this.nextButtons.length; i++) {
+      this.nextButtons[i].addEventListener('click', that.handleClick)
+    }
     window.addEventListener('keydown', that.handleClick)
     window.addEventListener('touchstart', that.handleSwipeStart)
     window.addEventListener('touchend', that.handleSwipeEnd)

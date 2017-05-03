@@ -29,23 +29,24 @@ class Navigation {
     this.projectPointers = document.querySelectorAll('.js-project-pointer')
 
     let that = this
-    this.projectPointers.forEach(function(el) {
-      el.addEventListener('click', function(e) {
+
+    for (var i = 0; i < this.projectPointers.length; i++) {
+      this.projectPointers[i].addEventListener('click', function(e) {
         let el = this
         that.handleProjectClick(el)
       })
-    })
+    }
 
     if (firstTime) {
       this.navigationBurger.addEventListener('click', function(){
         that.handleBurgerClick()
       })
 
-      this.navigationItems.forEach(function(el) {
-        el.addEventListener('click', function(e) {
+      for (var i = 0; i < this.navigationItems.length; i++) {
+        this.navigationItems[i].addEventListener('click', function(e) {
           that.handleItemClick(e)
         })
-      })
+      }
     }
   }
 
